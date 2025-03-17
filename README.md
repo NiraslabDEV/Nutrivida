@@ -2,6 +2,11 @@
 
 Site oficial da GiNutrivida, uma plataforma de coaching de saúde holística especializada em avaliação de composição corporal, planos nutricionais personalizados e programas de saúde.
 
+## Site em Produção
+
+O site está atualmente hospedado no Netlify e pode ser acessado através do seguinte domínio:
+[https://ginutrivida.netlify.app](https://ginutrivida.netlify.app)
+
 ## Estrutura do Projeto
 
 ```
@@ -10,11 +15,27 @@ gisele-nutrivida/
 ├── programa-descoberta.html           # Página do Programa Descoberta
 ├── programa-equilibrio-metabolico.html # Página do Programa Equilíbrio Metabólico
 ├── programa-estilo-igbas.html         # Página do Programa Estilo de Vida com IGBas
+├── programa-jornada-21-dias.html      # Página da Jornada 21 Dias
+├── programa-atletas.html              # Página do Programa para Atletas
 ├── consulta-gratuita.html             # Página da Consulta Introdutória Gratuita
 ├── programa.html                      # Página genérica de programa
+├── images/                            # Diretório de imagens
+│   ├── Logo.png                       # Logo da GiNutrivida
+│   └── ...                           # Outras imagens do site
 ├── styles.css                         # Estilos personalizados
 └── script.js                          # JavaScript para interatividade
 ```
+
+### Descrição das Páginas
+
+- **index.html**: Página principal com apresentação da GiNutrivida e todos os serviços
+- **programa-descoberta.html**: Detalhes do programa inicial para novos clientes
+- **programa-equilibrio-metabolico.html**: Programa Metabolic Balance® oficial
+- **programa-estilo-igbas.html**: Programa baseado no Índice Glicêmico Baixo
+- **programa-jornada-21-dias.html**: Programa intensivo de transformação em 21 dias
+- **programa-atletas.html**: Programa especializado para atletas de alta performance
+- **consulta-gratuita.html**: Página para agendamento de consulta introdutória
+- **programa.html**: Template base para páginas de programas
 
 ## Tecnologias Utilizadas
 
@@ -43,11 +64,20 @@ gisele-nutrivida/
 2. Faça o upload dos arquivos para o repositório
 3. Ative o GitHub Pages nas configurações do repositório
 
-### Opção 3: Netlify ou Vercel
+### Configuração Atual: Netlify
 
-1. Crie uma conta no Netlify ou Vercel
-2. Conecte com seu repositório Git ou faça upload manual dos arquivos
-3. O deploy será automático
+O site está atualmente hospedado no Netlify com deploy automático integrado ao repositório GitHub. Para atualizar o site:
+
+1. Faça push das alterações para o repositório principal no GitHub
+2. O Netlify detectará automaticamente as mudanças e fará o deploy
+3. O site estará disponível em [https://ginutrivida.netlify.app](https://ginutrivida.netlify.app)
+
+Para configurar um novo deploy no Netlify:
+
+1. Crie uma conta no Netlify
+2. Conecte com seu repositório Git
+3. Configure as variáveis de ambiente necessárias
+4. O deploy será automático a cada push no repositório
 
 ## Personalização
 
