@@ -1,0 +1,93 @@
+/* Estilos personalizados para o site Gisele Nutrivida */
+
+/* Fonte personalizada usando Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Animações sutis */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Ajustes para o botão móvel de WhatsApp em telas pequenas */
+@media (max-width: 768px) {
+  .fixed.bottom-6.right-6 {
+    bottom: 5rem; /* Ajuste para não sobrepor a navegação inferior */
+  }
+}
+
+/* Efeito hover em cards */
+.hover\:shadow-xl:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo para inputs ativos */
+input:focus,
+textarea:focus {
+  border-color: #059669;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+}
+
+/* Estilo para imagens para manter proporção */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animação para o banner de WhatsApp */
+.bg-green-600 {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-green-600::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  100% {
+    left: 100%;
+  }
+}
+
+/* Estilo de scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo para seleção de texto */
+::selection {
+  background-color: rgba(5, 150, 105, 0.3);
+}
+
+/* CORREÇÃO: Garantindo que as seções sempre apareçam */
+section {
+  opacity: 1 !important; /* Garantindo que nenhum elemento fique invisível */
+  will-change: transform; /* Otimização para animações suaves */
+}
+
+/* Ajustes para animações mais suaves */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

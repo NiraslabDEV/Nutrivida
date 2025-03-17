@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gisele Nutrivida | Nutricionista Esportiva</title>
+    <meta
+      name="description"
+      content="Gisele Oliveira é uma nutricionista esportiva especializada em avaliação de composição corporal e planos nutricionais personalizados."
+    />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <h1 class="text-green-600 font-bold text-2xl">Gisele Nutrivida</h1>
+        </div>
+        <!-- Menu para Desktop -->
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="#inicio"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Início</a
+          >
+          <a
+            href="#servicos"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Serviços</a
+          >
+          <a href="#sobre" class="text-gray-700 hover:text-green-600 transition"
+            >Sobre</a
+          >
+          <a
+            href="#programa"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Programa</a
+          >
+          <a
+            href="#consulta-gratuita"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Consulta Gratuita</a
+          >
+          <a
+            href="#contato"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Contato</a
+          >
+        </nav>
+        <!-- Botão de menu móvel -->
+        <button class="md:hidden text-gray-700" id="mobile-menu-button">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+      <!-- Menu móvel -->
+      <div class="md:hidden hidden bg-white w-full" id="mobile-menu">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+          <a
+            href="#inicio"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Início</a
+          >
+          <a
+            href="#servicos"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Serviços</a
+          >
+          <a href="#sobre" class="text-gray-700 hover:text-green-600 transition"
+            >Sobre</a
+          >
+          <a
+            href="#programa"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Programa</a
+          >
+          <a
+            href="#consulta-gratuita"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Consulta Gratuita</a
+          >
+          <a
+            href="#contato"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Contato</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section
+      id="inicio"
+      class="py-16 bg-gradient-to-r from-green-50 to-green-100"
+    >
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            Transforme sua saúde com a Gisele Nutrivida
+          </h2>
+          <p class="text-lg text-gray-600 mb-6">
+            Nutrição personalizada e acompanhamento profissional para alcançar
+            seus objetivos de saúde e bem-estar.
+          </p>
+          <a
+            href="#contato"
+            class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition shadow-lg inline-block"
+            >Agende uma Consulta</a
+          >
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <div class="bg-white p-2 rounded-lg shadow-xl">
+            <img
+              src="Gisele-Home-1-282x300.png"
+              alt="Gisele Nutrivida"
+              class="rounded-lg w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Nossos Planos de Serviço
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Plano Essencial -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+          >
+            <div class="bg-green-100 p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Plano Essencial
+              </h3>
+              <p class="text-gray-600">Avaliação física completa</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Avaliação de peso e estatura</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Índice de massa corporal (IMC)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Percentual de massa muscular</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Percentual de gordura</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Análise de gordura visceral</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Bioimpedância e antropometria</span>
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/551100000000?text=Olá,%20tenho%20interesse%20no%20Plano%20Essencial"
+                target="_blank"
+                class="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition"
+              >
+                <i class="fab fa-whatsapp mr-2"></i>Quero este plano
+              </a>
+            </div>
+          </div>
+
+          <!-- Plano Premium -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+          >
+            <div class="bg-green-200 p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Plano Premium
+              </h3>
+              <p class="text-gray-600">Avaliação + Plano Nutricional</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Todos os serviços do Plano Essencial</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Anamnese alimentar detalhada</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Avaliação de hábitos alimentares</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Identificação de intolerâncias</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Elaboração de plano nutricional</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Orientação personalizada</span>
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/551100000000?text=Olá,%20tenho%20interesse%20no%20Plano%20Premium"
+                target="_blank"
+                class="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition"
+              >
+                <i class="fab fa-whatsapp mr-2"></i>Quero este plano
+              </a>
+            </div>
+          </div>
+
+          <!-- Plano Personalizado -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+          >
+            <div class="bg-green-300 p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Plano Personalizado
+              </h3>
+              <p class="text-gray-600">Acompanhamento completo</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Todos os serviços do Plano Premium</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Acompanhamento contínuo</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Ajustes no plano conforme necessário</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Suporte via mensagens</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Consultas de acompanhamento</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                  <span>Relatórios de progresso</span>
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/551100000000?text=Olá,%20tenho%20interesse%20no%20Plano%20Personalizado"
+                target="_blank"
+                class="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition"
+              >
+                <i class="fab fa-whatsapp mr-2"></i>Quero este plano
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-16 bg-green-50">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+            <div class="bg-white p-2 rounded-full shadow-xl">
+              <img
+                src="Gisele-Home-2-222x300.png"
+                alt="Gisele Oliveira"
+                class="rounded-full w-64 h-64 object-cover"
+              />
+            </div>
+          </div>
+          <div class="md:w-2/3 md:pl-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+              Sobre Gisele Nutrivida
+            </h2>
+            <p class="text-gray-600 mb-4">
+              Gisele Oliveira é uma nutricionista esportiva com ampla
+              experiência em avaliação de composição corporal, anamnese
+              alimentar e elaboração de planos nutricionais personalizados.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Formada em Nutrição pela [Universidade], com especialização em
+              Nutrição Esportiva, Gisele atende pacientes com diferentes
+              necessidades e objetivos, desde a perda de peso até a melhoria do
+              desempenho atlético.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Sua abordagem combina conhecimento científico com atenção
+              personalizada, garantindo que cada cliente receba um plano
+              nutricional adequado às suas necessidades específicas.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-green-600 hover:text-green-800 transition"
+              >
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-green-600 hover:text-green-800 transition"
+              >
+                <i class="fab fa-facebook text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-green-600 hover:text-green-800 transition"
+              >
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Grupo WhatsApp -->
+    <section class="py-8 bg-green-600">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-white mb-4">
+          Entre para o nosso grupo de WhatsApp
+        </h2>
+        <p class="text-white mb-6">
+          Receba dicas de nutrição, receitas saudáveis e conteúdo exclusivo
+          diretamente no seu celular.
+        </p>
+        <a
+          href="https://chat.whatsapp.com/link-do-grupo"
+          target="_blank"
+          class="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition shadow-lg inline-block"
+        >
+          <i class="fab fa-whatsapp mr-2"></i>Participar do Grupo
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção de Programas Nutricionais -->
+    <section id="programas-nutricionais" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Programas Nutricionais Transformadores
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Escolha o programa ideal para suas necessidades e objetivos, com
+            metodologias exclusivas e cientificamente comprovadas.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Programa Descoberta -->
+          <div
+            class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full bg-white"
+          >
+            <div class="relative">
+              <div
+                class="h-48 bg-green-50 flex items-center justify-center rounded-t-xl overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-b from-green-100/50 to-green-200/50"
+                ></div>
+                <h3
+                  class="relative text-2xl font-bold text-gray-800 px-4 text-center z-10"
+                >
+                  Programa Descoberta
+                </h3>
+              </div>
+            </div>
+            <div class="p-6 flex-grow">
+              <p class="text-gray-600 mb-4">
+                Para quem busca entender e melhorar sua relação com a
+                alimentação, oferecemos uma avaliação completa e personalizada
+                de seus hábitos e objetivos.
+              </p>
+              <div class="my-4">
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                  <span>2 consultas + follow-up de 30 minutos</span>
+                </div>
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                  <span>Avaliação abrangente personalizada</span>
+                </div>
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                  <span>Planos de refeições adaptados</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                  <span>Suporte por mensagem disponível</span>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pb-6 mt-auto">
+              <a
+                href="programa-descoberta.html"
+                class="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition"
+              >
+                Conhecer o Programa
+              </a>
+            </div>
+          </div>
+
+          <!-- Programa Equilíbrio Metabólico -->
+          <div
+            class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full bg-white"
+          >
+            <div class="relative">
+              <div
+                class="h-48 bg-blue-50 flex items-center justify-center rounded-t-xl overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-b from-blue-100/50 to-blue-200/50"
+                ></div>
+                <div class="relative text-center z-10 px-4">
+                  <h3 class="text-2xl font-bold text-gray-800">
+                    Equilíbrio Metabólico
+                  </h3>
+                  <p class="text-gray-700 mt-1">
+                    Programa de Perda de Peso Personalizado
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 flex-grow">
+              <p class="text-gray-600 mb-4">
+                Uma abordagem revolucionária para equilibrar seu metabolismo e
+                atingir seus objetivos de peso de forma sustentável e saudável.
+              </p>
+              <div class="my-4">
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                  <span>Protocolo exclusivo baseado em ciência</span>
+                </div>
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                  <span>Otimização da sensibilidade à insulina</span>
+                </div>
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                  <span>25 anos de pesquisa aplicada</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                  <span>Resultados comprovados por milhares</span>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pb-6 mt-auto">
+              <a
+                href="programa-equilibrio-metabolico.html"
+                class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition"
+              >
+                Conhecer o Programa
+              </a>
+            </div>
+          </div>
+
+          <!-- Programa Estilo de Vida com IGBas -->
+          <div
+            class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full bg-white"
+          >
+            <div class="relative">
+              <div
+                class="h-48 bg-purple-50 flex items-center justify-center rounded-t-xl overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-b from-purple-100/50 to-purple-200/50"
+                ></div>
+                <div class="relative text-center z-10 px-4">
+                  <h3 class="text-2xl font-bold text-gray-800">
+                    Estilo de Vida com IGBas
+                  </h3>
+                  <p class="text-gray-700 mt-1">
+                    Transforme sua relação com os alimentos
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 flex-grow">
+              <p class="text-gray-600 mb-4">
+                Embarque em um programa de baixo IG para descobrir como
+                controlar a inflamação, equilibrar hormônios e desenvolver um
+                estilo alimentar sustentável.
+              </p>
+              <div class="my-4">
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                  <span>Alimentação antiinflamatória eficaz</span>
+                </div>
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                  <span>Redução dos sintomas de menopausa</span>
+                </div>
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                  <span>Detoxificação de 12 dias</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                  <span>Melhor disposição e energia</span>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pb-6 mt-auto">
+              <a
+                href="programa-estilo-igbas.html"
+                class="block w-full text-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition"
+              >
+                Conhecer o Programa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção do Programa -->
+    <section id="programa" class="py-20 bg-green-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Programa de Reeducação Alimentar e Gestão do Peso Duradoura
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Revolucione sua relação com a alimentação e descubra os segredos
+            para um estilo de vida sustentável e equilibrado.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1511909525232-61113c912358?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Programa de Reeducação Alimentar"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              Transforme sua saúde em apenas 3 semanas
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Nosso programa exclusivo, desenvolvido por Gisele Cannalonga
+              (RHN), especialista em emagrecimento e equilíbrio hormonal,
+              utiliza uma metodologia cientificamente comprovada para
+              reconstruir sua relação com a alimentação e estabelecer hábitos
+              duradouros.
+            </p>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+              <h4 class="font-bold text-lg text-gray-800 mb-2">
+                Detalhes do Programa:
+              </h4>
+              <ul class="space-y-2 mb-4">
+                <li class="flex items-center">
+                  <i class="fas fa-calendar-alt text-green-600 mr-2"></i>
+                  <span>Início: <strong>15 de maio às 16:00</strong></span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-hourglass-end text-green-600 mr-2"></i>
+                  <span
+                    >Inscrições até: <strong>10 de maio às 20:59</strong></span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-clock text-green-600 mr-2"></i>
+                  <span>Duração: <strong>15/mai a 5/jun (2025)</strong></span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-tag text-green-600 mr-2"></i>
+                  <span
+                    >Investimento: <strong>C$497,00</strong>
+                    <span class="line-through text-gray-500">C$905</span></span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-laptop text-green-600 mr-2"></i>
+                  <span>Formato: <strong>100% online</strong></span>
+                </li>
+              </ul>
+              <div
+                class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-3"
+              >
+                <p class="text-sm text-yellow-800 font-medium text-center">
+                  Apenas 8 vagas disponíveis!
+                </p>
+              </div>
+              <p class="text-sm text-gray-500 italic">
+                *Participantes anteriores relataram transformações
+                significativas em questão de semanas.
+              </p>
+            </div>
+
+            <h4 class="font-bold text-lg text-gray-800 mb-2">
+              O que você recebe:
+            </h4>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                <span>4 sessões semanais transformadoras em grupo</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                <span
+                  >1 consulta estratégica individual personalizada (30
+                  min)</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                <span
+                  >Plano alimentar premium adaptado às suas necessidades</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                <span
+                  >Material exclusivo baseado em evidências científicas</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                <span>Recibos oficiais para reembolso com seu seguro</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-gift text-green-600 mr-2 mt-1"></i>
+                <span
+                  >BÔNUS: Indique um amigo e ganhe consulta extra (C$120 de
+                  valor)</span
+                >
+              </li>
+            </ul>
+
+            <h4 class="font-bold text-lg text-gray-800 mb-2">
+              Por que participar:
+            </h4>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <i class="fas fa-arrow-right text-green-600 mr-2 mt-1"></i>
+                <span
+                  >Domine a ciência nutricional aplicada à sua realidade</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-arrow-right text-green-600 mr-2 mt-1"></i>
+                <span
+                  >Desintoxique seu corpo e ambiente de forma estratégica</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-arrow-right text-green-600 mr-2 mt-1"></i>
+                <span
+                  >Estabeleça hábitos alimentares sustentáveis e
+                  prazerosos</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-arrow-right text-green-600 mr-2 mt-1"></i>
+                <span>Integre-se a uma comunidade de alta performance</span>
+              </li>
+            </ul>
+
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="programa.html"
+                class="bg-white border border-green-600 text-green-600 hover:bg-green-50 font-bold py-2 px-6 rounded-lg transition inline-flex items-center"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Ver Detalhes Completos
+              </a>
+              <a
+                href="https://ginutrivida.practicebetter.io/#/61d661603980330f64c8e552/bookings?c=6688637b6730cf11396be384&step=course"
+                target="_blank"
+                class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition inline-flex items-center"
+              >
+                <i class="fas fa-check-circle mr-2"></i> Garantir Minha Vaga
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Consulta Introdutória Gratuita -->
+    <section
+      id="consulta-gratuita"
+      class="py-16 bg-gradient-to-r from-green-700 to-green-600"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Consulta Online"
+              class="rounded-lg shadow-xl border-4 border-white"
+            />
+          </div>
+          <div class="md:w-1/2 md:pl-12 text-white">
+            <span
+              class="inline-block bg-white text-green-600 font-bold px-4 py-2 rounded-full mb-4"
+              >EXCLUSIVO</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Consulta Introdutória Gratuita
+            </h2>
+            <p class="text-lg mb-6 opacity-90">
+              Inicie sua jornada para uma vida mais saudável com uma consulta
+              estratégica de 15 minutos com Gisele Cannalonga, RHN, totalmente
+              gratuita.
+            </p>
+            <div
+              class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 mb-6"
+            >
+              <h3 class="text-xl font-bold mb-4">O que você receberá:</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-white mr-3 mt-1"></i>
+                  <span
+                    >Apresentação dos programas disponíveis para melhorar sua
+                    saúde</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-white mr-3 mt-1"></i>
+                  <span
+                    >Avaliação inicial das suas necessidades e objetivos</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-white mr-3 mt-1"></i>
+                  <span
+                    >A uma compreensão clara de como funcionam nossas
+                    consultas</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-white mr-3 mt-1"></i>
+                  <span>Disponível em português, inglês e francês</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-6">
+              <button
+                id="mostrar-pre-consulta"
+                class="w-full bg-white text-green-600 hover:bg-green-50 font-bold py-3 px-6 rounded-lg transition shadow-lg text-center flex items-center justify-center"
+              >
+                <i class="fas fa-clipboard-list mr-2"></i> Preencher Formulário
+                Prévio
+              </button>
+              <p class="text-sm mt-2 text-center opacity-80">
+                Preencha um breve formulário para maximizar sua consulta
+                gratuita
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <a
+                href="consulta-gratuita.html"
+                class="bg-white text-green-600 hover:bg-green-50 font-bold py-3 px-8 rounded-lg transition shadow-lg text-center"
+              >
+                Saiba Mais
+              </a>
+              <a
+                href="https://ginutrivida.practicebetter.io/#/61d661603980330f64c8e552/bookings?c=6688637b6730cf11396be384&step=course"
+                target="_blank"
+                class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-3 px-8 rounded-lg transition shadow-lg text-center"
+              >
+                Agendar Agora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal de Pré-Consulta -->
+      <div id="modal-pre-consulta" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black opacity-75"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+          <div
+            class="bg-white rounded-lg shadow-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-0 opacity-0 transform scale-95 transition-all duration-300"
+            id="modal-content"
+          >
+            <!-- Cabeçalho do modal -->
+            <div
+              class="bg-gradient-to-r from-green-600 to-green-500 p-6 text-white rounded-t-lg"
+            >
+              <div class="flex justify-between items-center">
+                <h3 class="text-2xl font-bold">Formulário de Pré-Consulta</h3>
+                <button
+                  id="fechar-modal"
+                  class="text-white hover:text-gray-200 focus:outline-none"
+                >
+                  <i class="fas fa-times text-xl"></i>
+                </button>
+              </div>
+              <p class="mt-2 text-white/80">
+                Maximize o valor da sua consulta gratuita respondendo a estas
+                perguntas
+              </p>
+              <!-- Indicador de progresso -->
+              <div class="mt-4 relative pt-4">
+                <div
+                  class="overflow-hidden h-2 mb-1 text-xs flex rounded bg-white/20"
+                >
+                  <div
+                    id="progress-bar"
+                    class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-white w-1/3 transition-all duration-300 ease-in-out"
+                  ></div>
+                </div>
+                <div class="flex justify-between">
+                  <span id="step-indicator" class="text-sm font-medium"
+                    >Etapa 1 de 3</span
+                  >
+                  <span id="time-indicator" class="text-sm font-medium"
+                    >Estimado: 1 min</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Corpo do formulário multi-etapas -->
+            <form id="multi-step-form" class="p-6">
+              <!-- Etapa 1: Informações pessoais -->
+              <div class="form-step" id="step-1">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                  Informações Pessoais
+                </h4>
+                <div class="space-y-4">
+                  <div>
+                    <label
+                      for="form-nome"
+                      class="block text-gray-700 font-medium mb-2"
+                    >
+                      Nome Completo<span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                      >
+                        <i class="fas fa-user text-gray-400"></i>
+                      </div>
+                      <input
+                        type="text"
+                        id="form-nome"
+                        name="nome"
+                        required
+                        class="w-full pl-10 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 transition-colors"
+                      />
+                    </div>
+                    <p
+                      class="error-message text-red-500 text-sm mt-1 hidden"
+                      id="nome-error"
+                    >
+                      Por favor, insira seu nome completo
+                    </p>
+                  </div>
+
+                  <div>
+                    <label
+                      for="form-email"
+                      class="block text-gray-700 font-medium mb-2"
+                    >
+                      Email<span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                      >
+                        <i class="fas fa-envelope text-gray-400"></i>
+                      </div>
+                      <input
+                        type="email"
+                        id="form-email"
+                        name="email"
+                        required
+                        class="w-full pl-10 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 transition-colors"
+                      />
+                    </div>
+                    <p
+                      class="error-message text-red-500 text-sm mt-1 hidden"
+                      id="email-error"
+                    >
+                      Por favor, insira um email válido
+                    </p>
+                  </div>
+
+                  <div>
+                    <label
+                      for="form-telefone"
+                      class="block text-gray-700 font-medium mb-2"
+                    >
+                      Telefone/WhatsApp<span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                      >
+                        <i class="fas fa-phone text-gray-400"></i>
+                      </div>
+                      <input
+                        type="tel"
+                        id="form-telefone"
+                        name="telefone"
+                        required
+                        class="w-full pl-10 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 transition-colors"
+                      />
+                    </div>
+                    <p
+                      class="error-message text-red-500 text-sm mt-1 hidden"
+                      id="telefone-error"
+                    >
+                      Por favor, insira um telefone válido
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-6 flex justify-end">
+                  <button
+                    type="button"
+                    id="next-1"
+                    class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition shadow-md flex items-center"
+                  >
+                    Próximo <i class="fas fa-arrow-right ml-2"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Etapa 2: Objetivos -->
+              <div class="form-step hidden" id="step-2">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                  Seus Objetivos
+                </h4>
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-gray-700 font-medium mb-2">
+                      Quais são seus objetivos principais?<span
+                        class="text-red-500"
+                        >*</span
+                      >
+                      <span class="text-sm font-normal text-gray-500"
+                        >(Selecione até 3)</span
+                      >
+                    </label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
+                      <div
+                        class="objetivo-option border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-green-300 hover:bg-green-50 transition-colors"
+                      >
+                        <input
+                          type="checkbox"
+                          name="objetivos"
+                          value="perda_peso"
+                          class="hidden objetivo-checkbox"
+                          id="obj-perda-peso"
+                        />
+                        <label
+                          for="obj-perda-peso"
+                          class="flex items-center cursor-pointer"
+                        >
+                          <div
+                            class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3 flex items-center justify-center objetivo-marker"
+                          >
+                            <div
+                              class="w-3 h-3 bg-green-500 rounded-full hidden"
+                            ></div>
+                          </div>
+                          <div>
+                            <span class="font-medium">Perda de peso</span>
+                            <p class="text-xs text-gray-500">
+                              Redução de gordura e melhoria da composição
+                              corporal
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+
+                      <div
+                        class="objetivo-option border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-green-300 hover:bg-green-50 transition-colors"
+                      >
+                        <input
+                          type="checkbox"
+                          name="objetivos"
+                          value="equilibrio_hormonal"
+                          class="hidden objetivo-checkbox"
+                          id="obj-equilibrio"
+                        />
+                        <label
+                          for="obj-equilibrio"
+                          class="flex items-center cursor-pointer"
+                        >
+                          <div
+                            class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3 flex items-center justify-center objetivo-marker"
+                          >
+                            <div
+                              class="w-3 h-3 bg-green-500 rounded-full hidden"
+                            ></div>
+                          </div>
+                          <div>
+                            <span class="font-medium">Equilíbrio hormonal</span>
+                            <p class="text-xs text-gray-500">
+                              Balanceamento hormonal e redução de sintomas
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+
+                      <div
+                        class="objetivo-option border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-green-300 hover:bg-green-50 transition-colors"
+                      >
+                        <input
+                          type="checkbox"
+                          name="objetivos"
+                          value="energia"
+                          class="hidden objetivo-checkbox"
+                          id="obj-energia"
+                        />
+                        <label
+                          for="obj-energia"
+                          class="flex items-center cursor-pointer"
+                        >
+                          <div
+                            class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3 flex items-center justify-center objetivo-marker"
+                          >
+                            <div
+                              class="w-3 h-3 bg-green-500 rounded-full hidden"
+                            ></div>
+                          </div>
+                          <div>
+                            <span class="font-medium">Mais energia</span>
+                            <p class="text-xs text-gray-500">
+                              Combate à fadiga e aumento de vitalidade
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+
+                      <div
+                        class="objetivo-option border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-green-300 hover:bg-green-50 transition-colors"
+                      >
+                        <input
+                          type="checkbox"
+                          name="objetivos"
+                          value="digestao"
+                          class="hidden objetivo-checkbox"
+                          id="obj-digestao"
+                        />
+                        <label
+                          for="obj-digestao"
+                          class="flex items-center cursor-pointer"
+                        >
+                          <div
+                            class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3 flex items-center justify-center objetivo-marker"
+                          >
+                            <div
+                              class="w-3 h-3 bg-green-500 rounded-full hidden"
+                            ></div>
+                          </div>
+                          <div>
+                            <span class="font-medium">Saúde digestiva</span>
+                            <p class="text-xs text-gray-500">
+                              Melhoria na digestão e redução de desconfortos
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+
+                      <div
+                        class="objetivo-option border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-green-300 hover:bg-green-50 transition-colors"
+                      >
+                        <input
+                          type="checkbox"
+                          name="objetivos"
+                          value="habitos"
+                          class="hidden objetivo-checkbox"
+                          id="obj-habitos"
+                        />
+                        <label
+                          for="obj-habitos"
+                          class="flex items-center cursor-pointer"
+                        >
+                          <div
+                            class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3 flex items-center justify-center objetivo-marker"
+                          >
+                            <div
+                              class="w-3 h-3 bg-green-500 rounded-full hidden"
+                            ></div>
+                          </div>
+                          <div>
+                            <span class="font-medium">Hábitos saudáveis</span>
+                            <p class="text-xs text-gray-500">
+                              Desenvolver rotinas alimentares equilibradas
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+
+                      <div
+                        class="objetivo-option border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-green-300 hover:bg-green-50 transition-colors"
+                      >
+                        <input
+                          type="checkbox"
+                          name="objetivos"
+                          value="outro"
+                          class="hidden objetivo-checkbox"
+                          id="obj-outro"
+                        />
+                        <label
+                          for="obj-outro"
+                          class="flex items-center cursor-pointer"
+                        >
+                          <div
+                            class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3 flex items-center justify-center objetivo-marker"
+                          >
+                            <div
+                              class="w-3 h-3 bg-green-500 rounded-full hidden"
+                            ></div>
+                          </div>
+                          <div>
+                            <span class="font-medium">Outro objetivo</span>
+                            <p class="text-xs text-gray-500">
+                              Necessidade específica não listada
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <p
+                      class="error-message text-red-500 text-sm mt-2 hidden"
+                      id="objetivos-error"
+                    >
+                      Por favor, selecione pelo menos 1 objetivo
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-6 flex justify-between">
+                  <button
+                    type="button"
+                    id="prev-2"
+                    class="border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold py-2 px-6 rounded-lg transition shadow-sm flex items-center"
+                  >
+                    <i class="fas fa-arrow-left mr-2"></i> Voltar
+                  </button>
+                  <button
+                    type="button"
+                    id="next-2"
+                    class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition shadow-md flex items-center"
+                  >
+                    Próximo <i class="fas fa-arrow-right ml-2"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Etapa 3: Expectativas -->
+              <div class="form-step hidden" id="step-3">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                  Expectativas para Consulta
+                </h4>
+                <div class="space-y-4">
+                  <div>
+                    <label
+                      for="form-expectativas"
+                      class="block text-gray-700 font-medium mb-2"
+                    >
+                      O que você espera desta consulta gratuita?<span
+                        class="text-red-500"
+                        >*</span
+                      >
+                    </label>
+                    <textarea
+                      id="form-expectativas"
+                      name="expectativas"
+                      rows="4"
+                      required
+                      placeholder="Compartilhe suas dúvidas e o que você gostaria de abordar durante nossa consulta..."
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 transition-colors resize-none"
+                    ></textarea>
+                    <p
+                      class="error-message text-red-500 text-sm mt-1 hidden"
+                      id="expectativas-error"
+                    >
+                      Por favor, compartilhe o que você espera da consulta
+                    </p>
+                    <div class="text-right text-xs text-gray-500 mt-1">
+                      <span id="char-count">0</span>/300 caracteres
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <label class="block text-gray-700 font-medium mb-2">
+                      Qual horário você prefere para sua consulta?
+                    </label>
+                    <div class="flex flex-wrap gap-2">
+                      <label
+                        class="horario-option inline-flex items-center bg-white border border-gray-200 rounded-full px-4 py-2 cursor-pointer hover:bg-green-50 hover:border-green-300 transition-colors"
+                      >
+                        <input
+                          type="radio"
+                          name="horario-preferido"
+                          value="manha"
+                          class="hidden horario-radio"
+                        />
+                        <span>Manhã</span>
+                      </label>
+                      <label
+                        class="horario-option inline-flex items-center bg-white border border-gray-200 rounded-full px-4 py-2 cursor-pointer hover:bg-green-50 hover:border-green-300 transition-colors"
+                      >
+                        <input
+                          type="radio"
+                          name="horario-preferido"
+                          value="tarde"
+                          class="hidden horario-radio"
+                        />
+                        <span>Tarde</span>
+                      </label>
+                      <label
+                        class="horario-option inline-flex items-center bg-white border border-gray-200 rounded-full px-4 py-2 cursor-pointer hover:bg-green-50 hover:border-green-300 transition-colors"
+                      >
+                        <input
+                          type="radio"
+                          name="horario-preferido"
+                          value="noite"
+                          class="hidden horario-radio"
+                        />
+                        <span>Noite</span>
+                      </label>
+                      <label
+                        class="horario-option inline-flex items-center bg-white border border-gray-200 rounded-full px-4 py-2 cursor-pointer hover:bg-green-50 hover:border-green-300 transition-colors"
+                      >
+                        <input
+                          type="radio"
+                          name="horario-preferido"
+                          value="qualquer"
+                          class="hidden horario-radio"
+                        />
+                        <span>Qualquer horário</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 flex justify-between">
+                  <button
+                    type="button"
+                    id="prev-3"
+                    class="border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold py-2 px-6 rounded-lg transition shadow-sm flex items-center"
+                  >
+                    <i class="fas fa-arrow-left mr-2"></i> Voltar
+                  </button>
+                  <button
+                    type="submit"
+                    id="submit-form"
+                    class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition shadow-md flex items-center"
+                  >
+                    Concluir e Agendar <i class="fas fa-check ml-2"></i>
+                  </button>
+                </div>
+
+                <div class="mt-4 text-center">
+                  <p class="text-sm text-gray-500">
+                    Ao enviar, você será redirecionado para agendar sua consulta
+                    gratuita de 15 minutos.
+                  </p>
+                </div>
+              </div>
+            </form>
+
+            <!-- Etapa de sucesso (após envio) -->
+            <div class="hidden p-6 text-center" id="success-message">
+              <div class="mb-6 text-green-500 flex justify-center">
+                <i class="fas fa-check-circle text-6xl"></i>
+              </div>
+              <h4 class="text-2xl font-bold text-gray-800 mb-2">
+                Formulário Enviado!
+              </h4>
+              <p class="text-gray-600 mb-6">
+                Obrigado por compartilhar suas informações. Você será
+                redirecionado para o agendamento da sua consulta gratuita em
+                instantes...
+              </p>
+              <div class="flex justify-center">
+                <div
+                  class="inline-block h-2 w-40 bg-gray-200 rounded-full overflow-hidden"
+                >
+                  <div
+                    id="redirect-progress"
+                    class="h-full bg-green-500 w-0 transition-all duration-3000"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          Entre em Contato
+        </h2>
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <form class="space-y-4">
+              <div>
+                <label for="nome" class="block text-gray-700 mb-2">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+                />
+              </div>
+              <div>
+                <label for="telefone" class="block text-gray-700 mb-2"
+                  >Telefone</label
+                >
+                <input
+                  type="tel"
+                  id="telefone"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+                />
+              </div>
+              <div>
+                <label for="mensagem" class="block text-gray-700 mb-2"
+                  >Mensagem</label
+                >
+                <textarea
+                  id="mensagem"
+                  rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition shadow-lg"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+          <div class="md:w-1/2 md:pl-8">
+            <div class="bg-gray-100 p-6 rounded-lg h-full">
+              <h3 class="text-xl font-bold text-gray-800 mb-4">
+                Informações de Contato
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-map-marker-alt text-green-600 mr-3 mt-1"></i>
+                  <span>Endereço do consultório, Cidade - Estado</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-phone text-green-600 mr-3 mt-1"></i>
+                  <span>(11) 00000-0000</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-envelope text-green-600 mr-3 mt-1"></i>
+                  <span>contato@giselenutrivida.com.br</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-clock text-green-600 mr-3 mt-1"></i>
+                  <span>Segunda a Sexta: 9h às 18h</span>
+                </li>
+              </ul>
+              <div class="mt-8">
+                <h4 class="text-lg font-bold text-gray-800 mb-3">Siga-nos</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="text-green-600 hover:text-green-800 transition"
+                  >
+                    <i class="fab fa-instagram text-2xl"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-green-600 hover:text-green-800 transition"
+                  >
+                    <i class="fab fa-facebook text-2xl"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-green-600 hover:text-green-800 transition"
+                  >
+                    <i class="fab fa-linkedin text-2xl"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botão WhatsApp flutuante -->
+    <a
+      href="https://wa.me/551100000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg z-50 transition"
+    >
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Navegação Mobile (parte inferior) -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg z-40"
+    >
+      <div class="flex justify-around">
+        <a
+          href="#inicio"
+          class="flex flex-col items-center py-2 text-green-600"
+        >
+          <i class="fas fa-home text-xl"></i>
+          <span class="text-xs mt-1">Início</span>
+        </a>
+        <a
+          href="#servicos"
+          class="flex flex-col items-center py-2 text-gray-500 hover:text-green-600"
+        >
+          <i class="fas fa-list-ul text-xl"></i>
+          <span class="text-xs mt-1">Serviços</span>
+        </a>
+        <a
+          href="#sobre"
+          class="flex flex-col items-center py-2 text-gray-500 hover:text-green-600"
+        >
+          <i class="fas fa-user text-xl"></i>
+          <span class="text-xs mt-1">Sobre</span>
+        </a>
+        <a
+          href="#programa"
+          class="flex flex-col items-center py-2 text-gray-500 hover:text-green-600"
+        >
+          <i class="fas fa-book text-xl"></i>
+          <span class="text-xs mt-1">Programa</span>
+        </a>
+        <a
+          href="#consulta-gratuita"
+          class="flex flex-col items-center py-2 text-gray-500 hover:text-green-600"
+        >
+          <i class="fas fa-headset text-xl"></i>
+          <span class="text-xs mt-1">Consulta</span>
+        </a>
+        <a
+          href="#contato"
+          class="flex flex-col items-center py-2 text-gray-500 hover:text-green-600"
+        >
+          <i class="fas fa-envelope text-xl"></i>
+          <span class="text-xs mt-1">Contato</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-xl font-bold mb-4">Gisele Nutrivida</h2>
+            <p class="text-gray-300">
+              Nutrição personalizada para seu bem-estar
+            </p>
+          </div>
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-lg font-bold mb-4">Links Rápidos</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#inicio"
+                  class="text-gray-300 hover:text-white transition"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-300 hover:text-white transition"
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sobre"
+                  class="text-gray-300 hover:text-white transition"
+                  >Sobre</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#programa"
+                  class="text-gray-300 hover:text-white transition"
+                  >Programa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#consulta-gratuita"
+                  class="text-gray-300 hover:text-white transition"
+                  >Consulta Gratuita</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contato"
+                  class="text-gray-300 hover:text-white transition"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Redes Sociais</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-facebook text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p>&copy; 2025 Gisele Nutrivida. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- JavaScript para o modal de pré-consulta -->
+    <script>
+      // Elementos DOM
+      const modalPreConsulta = document.getElementById("modal-pre-consulta");
+      const modalContent = document.getElementById("modal-content");
+      const btnMostrarPreConsulta = document.getElementById(
+        "mostrar-pre-consulta"
+      );
+      const btnFecharModal = document.getElementById("fechar-modal");
+      const formMultiStep = document.getElementById("multi-step-form");
+      const progressBar = document.getElementById("progress-bar");
+      const stepIndicator = document.getElementById("step-indicator");
+
+      // Botões de navegação
+      const btnNext1 = document.getElementById("next-1");
+      const btnNext2 = document.getElementById("next-2");
+      const btnPrev2 = document.getElementById("prev-2");
+      const btnPrev3 = document.getElementById("prev-3");
+      const btnSubmit = document.getElementById("submit-form");
+
+      // Etapas do formulário
+      const step1 = document.getElementById("step-1");
+      const step2 = document.getElementById("step-2");
+      const step3 = document.getElementById("step-3");
+      const successMessage = document.getElementById("success-message");
+
+      // Contador de caracteres
+      const textareaExpectativas = document.getElementById("form-expectativas");
+      const charCount = document.getElementById("char-count");
+
+      // Estado atual
+      let currentStep = 1;
+      const totalSteps = 3;
+
+      // Abrir modal com animação
+      btnMostrarPreConsulta.addEventListener("click", function () {
+        modalPreConsulta.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // Impedir rolagem da página
+
+        // Animar entrada do modal
+        setTimeout(() => {
+          modalContent.classList.remove("opacity-0", "scale-95");
+          modalContent.classList.add("opacity-100", "scale-100");
+        }, 10);
+      });
+
+      // Fechar modal com animação
+      function closeModal() {
+        modalContent.classList.remove("opacity-100", "scale-100");
+        modalContent.classList.add("opacity-0", "scale-95");
+
+        setTimeout(() => {
+          modalPreConsulta.classList.add("hidden");
+          document.body.style.overflow = "auto"; // Restaurar rolagem
+        }, 300);
+      }
+
+      btnFecharModal.addEventListener("click", closeModal);
+
+      // Fechar modal clicando fora
+      modalPreConsulta.addEventListener("click", function (event) {
+        if (
+          event.target === modalPreConsulta ||
+          event.target.classList.contains("opacity-75")
+        ) {
+          closeModal();
+        }
+      });
+
+      // Navegação entre etapas
+      function goToStep(step) {
+        // Esconde todas as etapas
+        [step1, step2, step3].forEach((s) => s.classList.add("hidden"));
+
+        // Mostra a etapa atual
+        if (step === 1) step1.classList.remove("hidden");
+        if (step === 2) step2.classList.remove("hidden");
+        if (step === 3) step3.classList.remove("hidden");
+
+        // Atualiza a barra de progresso
+        const progressWidth = ((step - 1) / (totalSteps - 1)) * 100;
+        progressBar.style.width = `${progressWidth}%`;
+        stepIndicator.textContent = `Etapa ${step} de ${totalSteps}`;
+
+        // Atualiza o estado
+        currentStep = step;
+      }
+
+      // Validação dos campos
+      function validateStep(step) {
+        if (step === 1) {
+          // Valida etapa 1 (informações pessoais)
+          const nome = document.getElementById("form-nome");
+          const email = document.getElementById("form-email");
+          const telefone = document.getElementById("form-telefone");
+          const nomeError = document.getElementById("nome-error");
+          const emailError = document.getElementById("email-error");
+          const telefoneError = document.getElementById("telefone-error");
+
+          let isValid = true;
+
+          // Validação do nome
+          if (!nome.value.trim()) {
+            nomeError.classList.remove("hidden");
+            nome.classList.add("border-red-500");
+            isValid = false;
+          } else {
+            nomeError.classList.add("hidden");
+            nome.classList.remove("border-red-500");
+          }
+
+          // Validação do email
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!email.value.trim() || !emailRegex.test(email.value)) {
+            emailError.classList.remove("hidden");
+            email.classList.add("border-red-500");
+            isValid = false;
+          } else {
+            emailError.classList.add("hidden");
+            email.classList.remove("border-red-500");
+          }
+
+          // Validação do telefone (simples)
+          if (!telefone.value.trim() || telefone.value.length < 8) {
+            telefoneError.classList.remove("hidden");
+            telefone.classList.add("border-red-500");
+            isValid = false;
+          } else {
+            telefoneError.classList.add("hidden");
+            telefone.classList.remove("border-red-500");
+          }
+
+          return isValid;
+        }
+
+        if (step === 2) {
+          // Valida etapa 2 (objetivos)
+          const objetivos = document.querySelectorAll(
+            'input[name="objetivos"]:checked'
+          );
+          const objetivosError = document.getElementById("objetivos-error");
+
+          if (objetivos.length === 0) {
+            objetivosError.classList.remove("hidden");
+            return false;
+          } else {
+            objetivosError.classList.add("hidden");
+            return true;
+          }
+        }
+
+        if (step === 3) {
+          // Valida etapa 3 (expectativas)
+          const expectativas = document.getElementById("form-expectativas");
+          const expectativasError =
+            document.getElementById("expectativas-error");
+
+          if (!expectativas.value.trim()) {
+            expectativasError.classList.remove("hidden");
+            expectativas.classList.add("border-red-500");
+            return false;
+          } else {
+            expectativasError.classList.add("hidden");
+            expectativas.classList.remove("border-red-500");
+            return true;
+          }
+        }
+
+        return true;
+      }
+
+      // Eventos de navegação
+      btnNext1.addEventListener("click", function () {
+        if (validateStep(1)) {
+          goToStep(2);
+        }
+      });
+
+      btnNext2.addEventListener("click", function () {
+        if (validateStep(2)) {
+          goToStep(3);
+        }
+      });
+
+      btnPrev2.addEventListener("click", function () {
+        goToStep(1);
+      });
+
+      btnPrev3.addEventListener("click", function () {
+        goToStep(2);
+      });
+
+      // Contador de caracteres para textarea
+      textareaExpectativas.addEventListener("input", function () {
+        const maxLength = 300;
+        const currentLength = this.value.length;
+
+        charCount.textContent = currentLength;
+
+        if (currentLength > maxLength) {
+          this.value = this.value.substring(0, maxLength);
+          charCount.textContent = maxLength;
+          charCount.classList.add("text-red-500");
+        } else {
+          charCount.classList.remove("text-red-500");
+        }
+      });
+
+      // Estilos interativos para os objetivos
+      const objetivoOptions = document.querySelectorAll(".objetivo-option");
+      objetivoOptions.forEach((option) => {
+        option.addEventListener("click", function () {
+          const checkbox = this.querySelector(".objetivo-checkbox");
+          const marker = this.querySelector(".objetivo-marker div");
+
+          // Se já estiver selecionado, desmarca
+          if (checkbox.checked) {
+            checkbox.checked = false;
+            this.classList.remove("border-green-500", "bg-green-50");
+            marker.classList.add("hidden");
+          } else {
+            // Verifica se já tem 3 selecionados
+            const checked = document.querySelectorAll(
+              'input[name="objetivos"]:checked'
+            );
+            if (checked.length >= 3) {
+              alert("Por favor, selecione no máximo 3 objetivos.");
+              return;
+            }
+
+            // Marca o checkbox
+            checkbox.checked = true;
+            this.classList.add("border-green-500", "bg-green-50");
+            marker.classList.remove("hidden");
+          }
+        });
+      });
+
+      // Estilos interativos para opções de horário
+      const horarioOptions = document.querySelectorAll(".horario-option");
+      horarioOptions.forEach((option) => {
+        option.addEventListener("click", function () {
+          // Remove seleção de todos
+          horarioOptions.forEach((opt) => {
+            opt.classList.remove("bg-green-100", "border-green-500");
+            opt.querySelector("input").checked = false;
+          });
+
+          // Adiciona seleção ao clicado
+          const radio = this.querySelector("input");
+          radio.checked = true;
+          this.classList.add("bg-green-100", "border-green-500");
+        });
+      });
+
+      // Envio do formulário e redirecionamento
+      formMultiStep.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!validateStep(currentStep)) {
+          return false;
+        }
+
+        // Esconde o formulário e mostra a mensagem de sucesso
+        formMultiStep.classList.add("hidden");
+        successMessage.classList.remove("hidden");
+
+        // Animação da barra de progresso de redirecionamento
+        const redirectProgress = document.getElementById("redirect-progress");
+        redirectProgress.style.width = "100%";
+
+        // Aqui você adicionaria código para enviar os dados para um servidor
+        // Por exemplo, usando fetch() para enviar os dados para uma API
+
+        // Simula envio e redirecionamento após 3 segundos
+        setTimeout(function () {
+          window.location.href =
+            "https://ginutrivida.practicebetter.io/#/61d661603980330f64c8e552/bookings?c=6688637b6730cf11396be384&step=course";
+        }, 3000);
+      });
+
+      // Inicialização
+      function initForm() {
+        goToStep(1);
+      }
+
+      // Chamada de inicialização
+      initForm();
+    </script>
+  </body>
+</html>

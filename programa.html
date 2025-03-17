@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa de Reeducação Alimentar | Gisele Nutrivida</title>
+    <meta
+      name="description"
+      content="Programa de Reeducação Alimentar e Gestão do Peso Duradoura da Gisele Cannalonga, RHN. Aprenda a comer de maneira saudável e duradoura!"
+    />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <a href="index.html" class="text-green-600 font-bold text-2xl"
+            >Gisele Nutrivida</a
+          >
+        </div>
+        <!-- Menu para Desktop -->
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="index.html#inicio"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Início</a
+          >
+          <a
+            href="index.html#servicos"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Serviços</a
+          >
+          <a
+            href="index.html#sobre"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Sobre</a
+          >
+          <a href="index.html#programa" class="text-green-600 transition"
+            >Programa</a
+          >
+          <a
+            href="index.html#contato"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Contato</a
+          >
+        </nav>
+        <!-- Botão de menu móvel -->
+        <button class="md:hidden text-gray-700" id="mobile-menu-button">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+      <!-- Menu móvel -->
+      <div class="md:hidden hidden bg-white w-full" id="mobile-menu">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+          <a
+            href="index.html#inicio"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Início</a
+          >
+          <a
+            href="index.html#servicos"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Serviços</a
+          >
+          <a
+            href="index.html#sobre"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Sobre</a
+          >
+          <a href="index.html#programa" class="text-green-600 transition"
+            >Programa</a
+          >
+          <a
+            href="index.html#contato"
+            class="text-gray-700 hover:text-green-600 transition"
+            >Contato</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner do Programa -->
+    <div
+      class="relative bg-cover bg-center h-80 md:h-96"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      "
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-green-900/70 to-green-600/70"
+      ></div>
+      <div class="container mx-auto px-4 h-full flex items-center relative">
+        <div class="max-w-3xl">
+          <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">
+            Programa de Reeducação Alimentar e Gestão do Peso Duradoura
+          </h1>
+          <p class="text-lg md:text-xl text-white opacity-90">
+            Uma jornada transformadora para um estilo de vida sustentável e
+            equilibrado
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 py-12">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <!-- Seção de Visão Geral -->
+        <div class="p-8 bg-green-50 border-b border-green-100">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">
+            Visão Geral do Programa
+          </h2>
+          <div class="flex flex-col lg:flex-row gap-8">
+            <div class="lg:w-3/4">
+              <p class="text-gray-700 mb-4">
+                O
+                <strong
+                  >Programa de Reeducação Alimentar e Gestão do Peso
+                  Duradoura</strong
+                >
+                foi meticulosamente desenvolvido pela especialista Gisele
+                Cannalonga, RHN (Registered Holistic Nutritionist), baseado em
+                anos de experiência clínica e pesquisa avançada em nutrição
+                funcional para proporcionar uma revolução completa na sua
+                relação com a alimentação.
+              </p>
+              <p class="text-gray-700 mb-4">
+                Este não é apenas mais um programa de dieta. É um sistema
+                completo de transformação que vai além das restrições
+                temporárias, capacitando você com conhecimentos fundamentais de
+                nutrição biológica e estratégias práticas para desenvolver
+                hábitos alimentares sustentáveis e equilibrados que se integram
+                perfeitamente ao seu estilo de vida.
+              </p>
+              <p class="text-gray-700 mb-6">
+                Durante 3 semanas intensivas, de 15 de maio a 5 de junho de
+                2025, você terá acesso a um ambiente de aprendizado 100% online
+                que combina sessões de grupo dinâmicas e interativas com
+                consultoria individual personalizada, projetada para atender às
+                suas necessidades específicas e maximizar seus resultados.
+              </p>
+              <div class="bg-green-100 p-6 rounded-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-3">
+                  Especialista Responsável
+                </h3>
+                <div class="flex items-center">
+                  <div class="mr-4">
+                    <div
+                      class="bg-white p-1 rounded-full w-24 h-24 overflow-hidden"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                        alt="Gisele Cannalonga"
+                        class="rounded-full w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold">Gisele Cannalonga, RHN</h4>
+                    <p class="text-sm text-gray-600 mb-2">
+                      ESPECIALISTA EM EMAGRECIMENTO E EQUILÍBRIO HORMONAL @
+                      GINUTRIVIDA
+                    </p>
+                    <p class="text-gray-700 italic">
+                      "Seu corpo é seu templo, cuide dele com a dedicação que
+                      merece."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/4 bg-white rounded-lg shadow p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">
+                Informações Essenciais
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-calendar-alt text-green-600 mr-3 mt-1"></i>
+                  <div>
+                    <span class="block font-semibold">Data de Início</span>
+                    <span>15 de maio às 16:00</span>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-hourglass-end text-green-600 mr-3 mt-1"></i>
+                  <div>
+                    <span class="block font-semibold">Prazo de Inscrição</span>
+                    <span>10 de maio às 20:59</span>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-clock text-green-600 mr-3 mt-1"></i>
+                  <div>
+                    <span class="block font-semibold">Duração do Programa</span>
+                    <span>15/mai a 5/jun (2025)</span>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-tag text-green-600 mr-3 mt-1"></i>
+                  <div>
+                    <span class="block font-semibold">Investimento</span>
+                    <span
+                      >C$497,00
+                      <span class="line-through text-gray-500 text-sm"
+                        >C$905</span
+                      ></span
+                    >
+                    <div class="text-red-600 text-sm font-medium">
+                      Economize 45% (oferta por tempo limitado)
+                    </div>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-users text-green-600 mr-3 mt-1"></i>
+                  <div>
+                    <span class="block font-semibold">Formato</span>
+                    <span>100% online com acesso ilimitado</span>
+                  </div>
+                </li>
+              </ul>
+              <div
+                class="bg-yellow-50 border border-yellow-200 rounded p-3 my-4 text-sm"
+              >
+                <p class="text-center text-yellow-800 font-medium">
+                  Vagas limitadas!
+                </p>
+                <p class="text-center text-yellow-700">
+                  Restam apenas 8 vagas para esta turma
+                </p>
+              </div>
+              <a
+                href="https://ginutrivida.practicebetter.io/#/61d661603980330f64c8e552/bookings?c=6688637b6730cf11396be384&step=course"
+                target="_blank"
+                class="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition shadow-lg mt-2"
+              >
+                Garantir Minha Vaga Agora
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- O Que Está Incluído -->
+        <div class="p-8 border-b border-gray-100">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">
+            O Que Você Receberá
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Item 1 -->
+            <div
+              class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-users text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    4 Sessões em Grupo de Alta Performance
+                  </h3>
+                </div>
+                <p class="text-gray-600">
+                  Imersões semanais estratégicas onde você aprenderá princípios
+                  nutricionais avançados, técnicas de implementação prática e
+                  receberá feedback personalizado em ambiente colaborativo.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-user-friends text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Consulta Estratégica Individual
+                  </h3>
+                </div>
+                <p class="text-gray-600">
+                  Uma sessão exclusiva de 30 minutos com Gisele Cannalonga, onde
+                  será desenvolvido um plano de ação personalizado focado nas
+                  suas necessidades específicas e objetivos particulares.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-utensils text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Plano Alimentar Premium
+                  </h3>
+                </div>
+                <p class="text-gray-600">
+                  Receba um plano nutricional completo desenvolvido por
+                  especialista, incluindo orientações para refeições
+                  equilibradas, opções saudáveis e alternativas para diferentes
+                  necessidades alimentares.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+              class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-file-alt text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Material Exclusivo Baseado em Evidências
+                  </h3>
+                </div>
+                <p class="text-gray-600">
+                  Acesso a guias, checklists e recursos práticos fundamentados
+                  em pesquisas científicas atualizadas para implementação
+                  imediata do seu novo estilo de vida saudável.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+              class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-file-invoice text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Documentação para Seguro
+                  </h3>
+                </div>
+                <p class="text-gray-600">
+                  Recibos oficiais em naturopatia para submissão ao seu plano de
+                  saúde, possibilitando reembolso integral ou parcial do seu
+                  investimento, tornando o programa ainda mais acessível.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div
+              class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-gift text-green-600 text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Bônus Exclusivo de Alto Valor
+                  </h3>
+                </div>
+                <p class="text-gray-600">
+                  Indique um amigo que se inscreva e ganhe uma consulta
+                  estratégica individual de 30 minutos com Gisele (valor de
+                  C$120), utilizável quando desejar para aprofundar seu
+                  progresso.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Por Que Participar -->
+        <div class="p-8 bg-green-50">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">
+            Por Que Este Programa é Revolucionário
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                    <i class="fas fa-check text-green-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">
+                      Metodologia Baseada em Ciência Nutricional Avançada
+                    </h4>
+                    <p class="text-gray-600">
+                      Aprenda princípios fundamentais de nutrição funcional e
+                      bioquímica aplicada que transformarão sua compreensão
+                      sobre alimentos e metabolismo, criando uma base sólida
+                      para decisões alimentares inteligentes.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                    <i class="fas fa-check text-green-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">
+                      Sistema Exclusivo de Identificação de Gatilhos Alimentares
+                    </h4>
+                    <p class="text-gray-600">
+                      Descubra e elimine alimentos inflamatórios específicos
+                      para seu organismo através de nosso protocolo
+                      proprietário, substituindo-os por alternativas nutritivas
+                      e igualmente saborosas que potencializam sua saúde.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                    <i class="fas fa-check text-green-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">
+                      Protocolo de Otimização de Orçamento Alimentar
+                    </h4>
+                    <p class="text-gray-600">
+                      Implementamos estratégias práticas de planejamento
+                      alimentar que não apenas beneficiam sua saúde, mas também
+                      otimizam seu orçamento, provando que alimentação saudável
+                      pode ser acessível e econômica.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                    <i class="fas fa-check text-green-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">
+                      Método Avançado de Detoxificação Ambiental
+                    </h4>
+                    <p class="text-gray-600">
+                      Aprenda a identificar e eliminar toxinas ocultas em seu
+                      ambiente cotidiano que impactam negativamente seu
+                      metabolismo, hormônios e capacidade de manter o peso
+                      ideal, criando um ecossistema que favorece sua saúde.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                    <i class="fas fa-check text-green-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">
+                      Estratégias Sustentáveis de Gerenciamento de Peso
+                    </h4>
+                    <p class="text-gray-600">
+                      Desenvolva técnicas psicológicas e comportamentais
+                      baseadas em neurociência para manter seus resultados a
+                      longo prazo, evitando o famoso efeito sanfona e
+                      estabelecendo uma relação saudável e duradoura com a
+                      alimentação.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                    <i class="fas fa-check text-green-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">
+                      Comunidade de Suporte de Alta Performance
+                    </h4>
+                    <p class="text-gray-600">
+                      Conecte-se com uma rede exclusiva de pessoas comprometidas
+                      com objetivos semelhantes, compartilhando experiências,
+                      superando desafios coletivamente e multiplicando
+                      resultados através da motivação e responsabilidade mútua.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimentos e Testemunhos -->
+        <div class="p-8 border-t border-gray-100">
+          <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Histórias de Transformação Real
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Depoimento 1 -->
+            <div class="bg-white p-6 rounded-lg shadow">
+              <div class="flex items-center mb-4">
+                <div class="text-yellow-400 flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 italic mb-4">
+                "O programa da Gisele transcende qualquer expectativa. A
+                metodologia revolucionou completamente minha relação com a
+                alimentação. Os conhecimentos práticos e suporte personalizado
+                me permitiram perder 8kg em três meses de forma sustentável e,
+                mais importante, sem o efeito rebote que sempre me atormentou.
+                Hoje tenho controle sobre minhas escolhas e uma nova perspectiva
+                sobre nutrição."
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-bold">Mariana Silva</h4>
+                  <p class="text-sm text-gray-500">
+                    Participante da Turma 2024 • Perdeu 8kg
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Depoimento 2 -->
+            <div class="bg-white p-6 rounded-lg shadow">
+              <div class="flex items-center mb-4">
+                <div class="text-yellow-400 flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 italic mb-4">
+                "Como homem de 45 anos, sempre achei que nutrição não era para
+                mim. A abordagem científica e direta da Gisele mudou
+                completamente minha perspectiva. As sessões em grupo e a
+                consulta individual foram fundamentais para entender minhas
+                necessidades específicas e implementar mudanças práticas. Em 60
+                dias, meus níveis de energia transformaram e meus exames de
+                sangue mostraram melhorias impressionantes. Este programa é um
+                investimento inestimável."
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-bold">Carlos Mendes</h4>
+                  <p class="text-sm text-gray-500">
+                    Participante da Turma 2024 • Melhorou perfil lipídico em 60
+                    dias
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="p-8 bg-gray-50 border-t border-gray-100">
+          <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Perguntas Frequentes
+          </h2>
+          <div class="space-y-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="font-bold text-lg text-gray-800 mb-2">
+                Como funcionam as sessões online?
+              </h3>
+              <p class="text-gray-600">
+                As sessões são realizadas através de nossa plataforma digital
+                segura e exclusiva, com tecnologia de videoconferência de alta
+                qualidade. Você receberá links de acesso personalizados por
+                e-mail 24 horas antes de cada sessão. Recomendamos utilizar um
+                dispositivo com conexão estável à internet para maximizar sua
+                experiência de aprendizado interativo.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="font-bold text-lg text-gray-800 mb-2">
+                Preciso ter conhecimentos prévios sobre nutrição?
+              </h3>
+              <p class="text-gray-600">
+                Absolutamente não! O programa foi meticulosamente estruturado
+                para atender pessoas em todos os níveis de conhecimento. Nossa
+                metodologia progressiva começa com fundamentos essenciais e
+                avança gradativamente para conceitos mais sofisticados,
+                garantindo que todos os participantes absorvam o conhecimento de
+                forma clara e aplicável, independentemente de sua experiência
+                prévia.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="font-bold text-lg text-gray-800 mb-2">
+                E se eu não puder participar de alguma sessão ao vivo?
+              </h3>
+              <p class="text-gray-600">
+                Compreendemos a dinâmica das agendas modernas. Todas as sessões
+                são gravadas em alta definição e disponibilizadas em nossa
+                plataforma exclusiva em até 24 horas após o encontro. Você terá
+                acesso ilimitado às gravações durante todo o programa e por 30
+                dias adicionais após sua conclusão, permitindo revisitar o
+                conteúdo no seu próprio ritmo.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="font-bold text-lg text-gray-800 mb-2">
+                Como agendar minha sessão individual?
+              </h3>
+              <p class="text-gray-600">
+                Após confirmação da sua inscrição, você receberá acesso ao nosso
+                sistema integrado de agendamento, onde poderá selecionar o
+                horário mais conveniente para sua consulta individual dentro de
+                uma grade exclusiva de disponibilidade. Nossa equipe de suporte
+                está disponível para assistir no processo de agendamento,
+                garantindo flexibilidade e conveniência.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="font-bold text-lg text-gray-800 mb-2">
+                O programa inclui um plano alimentar personalizado?
+              </h3>
+              <p class="text-gray-600">
+                O programa foi desenhado para ir além de simples planos
+                alimentares genéricos. Nosso foco está em equipá-lo com
+                princípios fundamentais de nutrição aplicada e estratégias
+                adaptáveis às suas necessidades individuais. Durante sua sessão
+                estratégica individual de 30 minutos, Gisele proporcionará
+                orientações personalizadas específicas para seu caso, garantindo
+                uma abordagem verdadeiramente individualizada.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Final -->
+        <div
+          class="p-8 bg-gradient-to-r from-green-600 to-green-700 text-center"
+        >
+          <h2 class="text-3xl font-bold text-white mb-4">
+            Transforme Sua Relação Com a Alimentação Agora
+          </h2>
+          <p class="text-white text-lg mb-8 max-w-2xl mx-auto">
+            Este programa exclusivo tem vagas limitadas para garantir atenção
+            personalizada. Garanta seu lugar nesta jornada transformadora e
+            comece a construir um futuro de saúde, vitalidade e equilíbrio que
+            você merece.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="https://ginutrivida.practicebetter.io/#/61d661603980330f64c8e552/bookings?c=6688637b6730cf11396be384&step=course"
+              target="_blank"
+              class="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition shadow-lg inline-block"
+            >
+              Garantir Minha Vaga Agora
+            </a>
+            <a
+              href="index.html#contato"
+              class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-3 px-8 rounded-lg transition shadow-lg inline-block"
+            >
+              Tenho Dúvidas - Falar com Especialista
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-xl font-bold mb-4">Gisele Nutrivida</h2>
+            <p class="text-gray-300">
+              Nutrição personalizada para seu bem-estar
+            </p>
+          </div>
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-lg font-bold mb-4">Links Rápidos</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html#inicio"
+                  class="text-gray-300 hover:text-white transition"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#servicos"
+                  class="text-gray-300 hover:text-white transition"
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#sobre"
+                  class="text-gray-300 hover:text-white transition"
+                  >Sobre</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#programa"
+                  class="text-gray-300 hover:text-white transition"
+                  >Programa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#contato"
+                  class="text-gray-300 hover:text-white transition"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Redes Sociais</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-facebook text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p>&copy; 2025 Gisele Nutrivida. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão WhatsApp flutuante -->
+    <a
+      href="https://wa.me/551100000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Programa%20de%20Reeducação%20Alimentar"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg z-50 transition"
+    >
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa Equilíbrio Metabólico | Gisele Nutrivida</title>
+    <meta
+      name="description"
+      content="Programa Equilíbrio Metabólico: Uma abordagem revolucionária para equilibrar seu metabolismo e atingir seus objetivos de peso de forma sustentável e saudável."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="text-2xl font-bold text-blue-600">
+            Gisele Nutrivida
+          </a>
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Início</a
+            >
+            <a
+              href="index.html#programas"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Programas</a
+            >
+            <a
+              href="index.html#sobre"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Sobre</a
+            >
+            <a
+              href="index.html#consulta-gratuita"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Consulta Gratuita</a
+            >
+            <a
+              href="index.html#contato"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Contato</a
+            >
+          </nav>
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 hover:text-blue-600 focus:outline-none"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-white shadow-lg rounded-b-lg hidden absolute w-full"
+      >
+        <div class="container mx-auto px-4 py-3">
+          <div class="flex flex-col space-y-3">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-blue-600 transition py-2"
+              >Início</a
+            >
+            <a
+              href="index.html#programas"
+              class="text-gray-700 hover:text-blue-600 transition py-2"
+              >Programas</a
+            >
+            <a
+              href="index.html#sobre"
+              class="text-gray-700 hover:text-blue-600 transition py-2"
+              >Sobre</a
+            >
+            <a
+              href="index.html#consulta-gratuita"
+              class="text-gray-700 hover:text-blue-600 transition py-2"
+              >Consulta Gratuita</a
+            >
+            <a
+              href="index.html#contato"
+              class="text-gray-700 hover:text-blue-600 transition py-2"
+              >Contato</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="relative py-20 bg-gradient-to-r from-blue-50 to-blue-100">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            Equilíbrio Metabólico
+          </h1>
+          <p class="text-xl text-gray-700 mb-2">
+            Programa de Perda de Peso Personalizado
+          </p>
+          <p class="text-lg text-gray-600 mb-8">
+            Baseado no protocolo Metabolic Balance® com 25 anos de pesquisa e
+            resultados comprovados
+          </p>
+          <a
+            href="https://practice.giselenutrivida.com/book-now"
+            target="_blank"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition shadow-md"
+          >
+            Agendar Consulta
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"
+      ></div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-xl shadow-md p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+              Sobre o Programa Equilíbrio Metabólico
+            </h2>
+            <p class="text-lg text-gray-700 mb-6">
+              O <strong>Programa Equilíbrio Metabólico</strong> é uma abordagem
+              revolucionária para perda de peso e saúde metabólica, baseado no
+              protocolo Metabolic Balance® desenvolvido na Alemanha e respaldado
+              por mais de 25 anos de pesquisa científica.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+              Diferente de dietas convencionais que tratam todos os indivíduos
+              da mesma forma, este programa é completamente personalizado com
+              base em seus dados bioquímicos únicos, histórico médico e
+              objetivos pessoais. O resultado é um plano alimentar que trabalha
+              em harmonia com seu metabolismo individual.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+              O programa visa não apenas a perda de peso, mas também a
+              otimização da sensibilidade à insulina, equilíbrio hormonal e
+              redução da inflamação crônica - fatores fundamentais para uma
+              saúde metabólica duradoura.
+            </p>
+
+            <div class="mt-10">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                Benefícios comprovados:
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-check-circle text-blue-600 mt-1 mr-3 text-xl"
+                  ></i>
+                  <div>
+                    <strong class="text-gray-800"
+                      >Perda de peso sustentável</strong
+                    >
+                    <p class="text-gray-600">
+                      Resultados duradouros sem o efeito sanfona comum em dietas
+                      restritivas
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-check-circle text-blue-600 mt-1 mr-3 text-xl"
+                  ></i>
+                  <div>
+                    <strong class="text-gray-800"
+                      >Melhora da sensibilidade à insulina</strong
+                    >
+                    <p class="text-gray-600">
+                      Otimização do metabolismo da glicose e redução de riscos
+                      associados à resistência insulínica
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-check-circle text-blue-600 mt-1 mr-3 text-xl"
+                  ></i>
+                  <div>
+                    <strong class="text-gray-800"
+                      >Redução da inflamação crônica</strong
+                    >
+                    <p class="text-gray-600">
+                      Diminuição de marcadores inflamatórios associados a
+                      diversas condições de saúde
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-check-circle text-blue-600 mt-1 mr-3 text-xl"
+                  ></i>
+                  <div>
+                    <strong class="text-gray-800"
+                      >Aumento significativo de energia</strong
+                    >
+                    <p class="text-gray-600">
+                      Melhora da vitalidade e disposição diária através da
+                      otimização metabólica
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-check-circle text-blue-600 mt-1 mr-3 text-xl"
+                  ></i>
+                  <div>
+                    <strong class="text-gray-800"
+                      >Melhora de parâmetros sanguíneos</strong
+                    >
+                    <p class="text-gray-600">
+                      Normalização de níveis de colesterol, triglicerídeos e
+                      outros marcadores bioquímicos
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 rounded-xl p-8 mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              Como funciona o programa
+            </h3>
+            <div class="space-y-6">
+              <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center mb-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center mr-4"
+                  >
+                    <span class="font-bold">1</span>
+                  </div>
+                  <h4 class="text-xl font-semibold">Avaliação Completa</h4>
+                </div>
+                <p class="text-gray-600 ml-14">
+                  Análise detalhada do seu histórico de saúde, hábitos
+                  alimentares, exames laboratoriais e objetivos pessoais para
+                  criar um perfil metabólico individualizado.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center mb-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center mr-4"
+                  >
+                    <span class="font-bold">2</span>
+                  </div>
+                  <h4 class="text-xl font-semibold">Plano Personalizado</h4>
+                </div>
+                <p class="text-gray-600 ml-14">
+                  Desenvolvimento de um plano alimentar exclusivo baseado em seu
+                  perfil bioquímico único, com alimentos específicos que
+                  otimizam seu metabolismo individual.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center mb-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center mr-4"
+                  >
+                    <span class="font-bold">3</span>
+                  </div>
+                  <h4 class="text-xl font-semibold">Implementação Guiada</h4>
+                </div>
+                <p class="text-gray-600 ml-14">
+                  Orientação passo a passo para implementação do plano, com
+                  suporte contínuo para garantir adaptação adequada e resultados
+                  consistentes.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center mb-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center mr-4"
+                  >
+                    <span class="font-bold">4</span>
+                  </div>
+                  <h4 class="text-xl font-semibold">
+                    Acompanhamento e Ajustes
+                  </h4>
+                </div>
+                <p class="text-gray-600 ml-14">
+                  Consultas de acompanhamento regulares para monitorar
+                  progresso, realizar ajustes necessários e garantir resultados
+                  sustentáveis a longo prazo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resultados -->
+          <div class="bg-white rounded-xl shadow-md p-8 mb-12">
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                Resultados Comprovados
+              </h3>
+              <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                O Programa Equilíbrio Metabólico já transformou a vida de
+                milhares de pessoas ao redor do mundo:
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+              <div class="p-4">
+                <div class="text-3xl font-bold text-blue-600 mb-2">
+                  +1 milhão
+                </div>
+                <p class="text-gray-700">Participantes em todo o mundo</p>
+              </div>
+              <div class="p-4">
+                <div class="text-3xl font-bold text-blue-600 mb-2">95%</div>
+                <p class="text-gray-700">
+                  Taxa de sucesso entre participantes que seguem o programa
+                </p>
+              </div>
+              <div class="p-4">
+                <div class="text-3xl font-bold text-blue-600 mb-2">25 anos</div>
+                <p class="text-gray-700">
+                  De pesquisa científica e aprimoramento contínuo
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimentos -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+              Histórias de Sucesso
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div
+                class="bg-white rounded-xl shadow-sm p-6 border border-gray-100"
+              >
+                <div class="flex items-center mb-4">
+                  <div class="text-yellow-400 flex mr-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="text-gray-600">5.0</span>
+                </div>
+                <p class="text-gray-700 italic mb-4">
+                  "Perdi 18kg em 6 meses com o Programa Equilíbrio Metabólico e,
+                  o mais importante, não recuperei o peso. Meus níveis de
+                  energia melhoraram drasticamente e meus exames de sangue
+                  normalizaram. A abordagem personalizada fez toda a diferença."
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <span class="text-blue-700 font-bold">CS</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold">Carlos S.</h5>
+                    <p class="text-sm text-gray-500">
+                      Participou em 2024 • Perdeu 18kg
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white rounded-xl shadow-sm p-6 border border-gray-100"
+              >
+                <div class="flex items-center mb-4">
+                  <div class="text-yellow-400 flex mr-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="text-gray-600">5.0</span>
+                </div>
+                <p class="text-gray-700 italic mb-4">
+                  "Depois de anos lutando contra a resistência à insulina e
+                  ganho de peso, finalmente encontrei uma solução que funciona.
+                  Perdi 12kg e minha glicemia normalizou completamente. O mais
+                  surpreendente é que não sinto fome ou privação como em outras
+                  dietas."
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <span class="text-blue-700 font-bold">AM</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold">Ana M.</h5>
+                    <p class="text-sm text-gray-500">
+                      Participou em 2024 • Normalizou glicemia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div
+            class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-8 text-white text-center mb-12"
+          >
+            <h3 class="text-2xl font-bold mb-4">
+              Pronto para transformar seu metabolismo?
+            </h3>
+            <p class="text-lg mb-6 max-w-2xl mx-auto">
+              Inicie sua jornada para um equilíbrio metabólico duradouro e
+              descubra como seu corpo pode naturalmente alcançar e manter seu
+              peso ideal.
+            </p>
+            <a
+              href="https://practice.giselenutrivida.com/book-now"
+              target="_blank"
+              class="inline-block bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition shadow-md"
+            >
+              Agendar Minha Consulta
+            </a>
+          </div>
+
+          <!-- FAQ -->
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              Perguntas Frequentes
+            </h3>
+            <div class="space-y-6">
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                  O que diferencia este programa de outras dietas?
+                </h4>
+                <p class="text-gray-700">
+                  O Programa Equilíbrio Metabólico não é uma dieta genérica, mas
+                  um plano completamente personalizado baseado em sua bioquímica
+                  individual. Utilizamos dados de exames laboratoriais e
+                  histórico médico para criar um plano que trabalha em harmonia
+                  com seu metabolismo único, resultando em mudanças
+                  sustentáveis.
+                </p>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                  Quanto tempo leva para ver resultados?
+                </h4>
+                <p class="text-gray-700">
+                  A maioria dos participantes começa a notar mudanças
+                  significativas nas primeiras 2-3 semanas, incluindo perda de
+                  peso, aumento de energia e melhora do sono. Os resultados
+                  continuam progressivamente ao longo do programa, com
+                  benefícios metabólicos que se estendem muito além da perda de
+                  peso visível.
+                </p>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                  Preciso fazer exames de sangue?
+                </h4>
+                <p class="text-gray-700">
+                  Sim, o programa utiliza dados de exames laboratoriais para
+                  personalizar seu plano. Se você já possui exames recentes
+                  (últimos 3 meses), podemos utilizá-los. Caso contrário,
+                  forneceremos uma requisição para os exames necessários, que
+                  são simples e rotineiros.
+                </p>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                  O programa é adequado para quem tem condições médicas?
+                </h4>
+                <p class="text-gray-700">
+                  O programa é seguro e benéfico para a maioria das pessoas,
+                  incluindo aquelas com diabetes tipo 2, hipertensão, colesterol
+                  elevado e outras condições metabólicas. Na verdade, muitos
+                  participantes experimentam melhoras significativas nestas
+                  condições. No entanto, sempre fazemos uma avaliação individual
+                  e, em alguns casos, trabalhamos em conjunto com seu médico.
+                </p>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                  Quanto tempo dura o programa?
+                </h4>
+                <p class="text-gray-700">
+                  O programa completo tem duração de 3 meses, divididos em fases
+                  específicas. Esta estrutura permite adaptação gradual e
+                  implementação sustentável das mudanças. Após o período
+                  inicial, oferecemos opções de manutenção para garantir
+                  resultados duradouros.
+                </p>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                  Como são realizadas as consultas?
+                </h4>
+                <p class="text-gray-700">
+                  Todas as consultas são realizadas online, através de
+                  videoconferência, permitindo flexibilidade de horários e
+                  localização. Utilizamos uma plataforma segura e de fácil
+                  acesso para garantir uma experiência confortável e eficiente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-xl font-bold mb-4">Gisele Nutrivida</h4>
+            <p class="text-gray-300 mb-4">
+              Nutrição personalizada para transformar sua saúde e bem-estar.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-facebook text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-whatsapp text-xl"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold mb-4">Links Rápidos</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-300 hover:text-white transition"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#programas"
+                  class="text-gray-300 hover:text-white transition"
+                  >Programas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#sobre"
+                  class="text-gray-300 hover:text-white transition"
+                  >Sobre</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#consulta-gratuita"
+                  class="text-gray-300 hover:text-white transition"
+                  >Consulta Gratuita</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#contato"
+                  class="text-gray-300 hover:text-white transition"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold mb-4">Programas</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="programa-descoberta.html"
+                  class="text-gray-300 hover:text-white transition"
+                  >Programa Descoberta</a
+                >
+              </li>
+              <li>
+                <a
+                  href="programa-equilibrio-metabolico.html"
+                  class="text-gray-300 hover:text-white transition"
+                  >Equilíbrio Metabólico</a
+                >
+              </li>
+              <li>
+                <a
+                  href="programa-estilo-igbas.html"
+                  class="text-gray-300 hover:text-white transition"
+                  >Estilo de Vida com IGBas</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold mb-4">Contato</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i class="fas fa-envelope text-blue-500 mt-1 mr-3"></i>
+                <span>contato@giselenutrivida.com</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone text-blue-500 mt-1 mr-3"></i>
+                <span>+1 (123) 456-7890</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i>
+                <span>Atendimento online para todo o Canadá</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p class="text-gray-400">
+            © 2025 Gisele Nutrivida. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
