@@ -45,6 +45,169 @@
       .logo-img:hover {
         animation: heartbeat 1s infinite;
       }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .floating {
+        animation: float 5s ease-in-out infinite;
+      }
+
+      .countdown-box {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .countdown-box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0.3) 50%,
+          rgba(255, 255, 255, 0.1) 100%
+        );
+        transform: translateX(-100%);
+        transition: transform 0.6s;
+      }
+
+      .countdown-box:hover:before {
+        transform: translateX(100%);
+      }
+
+      .day-marker {
+        position: relative;
+        z-index: 1;
+      }
+
+      .day-marker:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #10b981, #059669);
+        transform: scaleX(0);
+        transition: transform 0.3s;
+        transform-origin: bottom right;
+      }
+
+      .day-marker:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      .bg-emerald-600,
+      .bg-emerald-700,
+      .bg-emerald-800,
+      .bg-emerald-900,
+      .from-emerald-600,
+      .from-emerald-700,
+      .from-emerald-800,
+      .from-emerald-900,
+      .to-emerald-600,
+      .to-emerald-700,
+      .to-emerald-800,
+      .to-emerald-900 {
+        color: black !important;
+      }
+
+      .bg-emerald-600 h1,
+      .bg-emerald-700 h1,
+      .bg-emerald-800 h1,
+      .bg-emerald-900 h1,
+      .from-emerald-600 h1,
+      .from-emerald-700 h1,
+      .from-emerald-800 h1,
+      .from-emerald-900 h1,
+      .to-emerald-600 h1,
+      .to-emerald-700 h1,
+      .to-emerald-800 h1,
+      .to-emerald-900 h1,
+      .bg-emerald-600 h2,
+      .bg-emerald-700 h2,
+      .bg-emerald-800 h2,
+      .bg-emerald-900 h2,
+      .from-emerald-600 h2,
+      .from-emerald-700 h2,
+      .from-emerald-800 h2,
+      .from-emerald-900 h2,
+      .to-emerald-600 h2,
+      .to-emerald-700 h2,
+      .to-emerald-800 h2,
+      .to-emerald-900 h2,
+      .bg-emerald-600 h3,
+      .bg-emerald-700 h3,
+      .bg-emerald-800 h3,
+      .bg-emerald-900 h3,
+      .from-emerald-600 h3,
+      .from-emerald-700 h3,
+      .from-emerald-800 h3,
+      .from-emerald-900 h3,
+      .to-emerald-600 h3,
+      .to-emerald-700 h3,
+      .to-emerald-800 h3,
+      .to-emerald-900 h3,
+      .bg-emerald-600 p,
+      .bg-emerald-700 p,
+      .bg-emerald-800 p,
+      .bg-emerald-900 p,
+      .from-emerald-600 p,
+      .from-emerald-700 p,
+      .from-emerald-800 p,
+      .from-emerald-900 p,
+      .to-emerald-600 p,
+      .to-emerald-700 p,
+      .to-emerald-800 p,
+      .to-emerald-900 p {
+        color: black !important;
+      }
+
+      .bg-gradient-to-r,
+      .bg-gradient-to-t,
+      .bg-gradient-to-b,
+      .bg-gradient-to-l {
+        color: white !important;
+      }
+
+      section.bg-gradient-to-r h1,
+      section.bg-gradient-to-r h2,
+      section.bg-gradient-to-r h3,
+      section.bg-gradient-to-r h4,
+      section.bg-gradient-to-r h5,
+      section.bg-gradient-to-r h6,
+      section.bg-gradient-to-r p:not([class*="text-"]) {
+        color: white !important;
+      }
+
+      .text-white {
+        color: white !important;
+      }
+
+      /* Força a cor do texto em elementos específicos */
+      .relative.py-20.bg-gradient-to-r h1,
+      .relative.py-20.bg-gradient-to-r p,
+      .relative.py-16.bg-gradient-to-r h2,
+      .relative.py-16.bg-gradient-to-r p,
+      .bg-gradient-to-r.rounded-xl h3,
+      .bg-gradient-to-r.rounded-xl p {
+        color: white !important;
+      }
     </style>
   </head>
   <body class="bg-gray-50 text-gray-800">
@@ -155,58 +318,120 @@
     </header>
 
     <!-- Banner -->
-    <section
-      class="relative py-20 bg-gradient-to-r from-emerald-50 to-emerald-100"
-    >
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto text-center">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Jornada 21 Dias
-          </h1>
-          <p class="text-xl text-gray-700 mb-8">
-            Transforme seus hábitos e sua saúde em apenas 3 semanas com nossa
-            metodologia exclusiva
-          </p>
-          <a
-            href="https://practice.giselenutrivida.com/book-now"
-            target="_blank"
-            class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-lg transition shadow-md"
-          >
-            Começar Minha Jornada Agora
-          </a>
-        </div>
-      </div>
+    <section style="background: #064e3b; color: white; padding: 80px 0">
       <div
-        class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"
-      ></div>
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 16px;
+          text-align: center;
+        "
+      >
+        <h1
+          style="
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 24px;
+            color: white;
+          "
+        >
+          Transforme Seus Hábitos em Apenas 21 Dias
+        </h1>
+        <p style="font-size: 1.25rem; margin-bottom: 32px; color: #d1fae5">
+          Um programa intensivo de transformação que utiliza a ciência da
+          formação de hábitos para criar mudanças duradouras na sua saúde e
+          bem-estar
+        </p>
+        <a
+          href="https://practice.giselenutrivida.com/book-now"
+          target="_blank"
+          style="
+            display: inline-block;
+            background-color: white;
+            color: #064e3b;
+            font-weight: bold;
+            padding: 12px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          Garantir Minha Vaga na Próxima Turma
+        </a>
+      </div>
     </section>
 
     <!-- Conteúdo Principal -->
     <section class="py-16">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
+          <!-- Contagem numérica -->
+          <div class="flex justify-center mb-12">
+            <div class="grid grid-cols-4 gap-4 md:gap-6">
+              <div class="text-center bg-emerald-50 rounded-lg p-4 shadow-sm">
+                <div
+                  class="text-3xl md:text-4xl font-bold text-emerald-700 mb-1"
+                >
+                  21
+                </div>
+                <div class="text-sm text-emerald-800 uppercase tracking-wider">
+                  Dias
+                </div>
+              </div>
+              <div class="text-center bg-emerald-50 rounded-lg p-4 shadow-sm">
+                <div
+                  class="text-3xl md:text-4xl font-bold text-emerald-700 mb-1"
+                >
+                  3
+                </div>
+                <div class="text-sm text-emerald-800 uppercase tracking-wider">
+                  Fases
+                </div>
+              </div>
+              <div class="text-center bg-emerald-50 rounded-lg p-4 shadow-sm">
+                <div
+                  class="text-3xl md:text-4xl font-bold text-emerald-700 mb-1"
+                >
+                  1
+                </div>
+                <div class="text-sm text-emerald-800 uppercase tracking-wider">
+                  Você
+                </div>
+              </div>
+              <div class="text-center bg-emerald-50 rounded-lg p-4 shadow-sm">
+                <div
+                  class="text-3xl md:text-4xl font-bold text-emerald-700 mb-1"
+                >
+                  ∞
+                </div>
+                <div class="text-sm text-emerald-800 uppercase tracking-wider">
+                  Resultados
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="bg-white rounded-xl shadow-md p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">
-              Sobre a Jornada 21 Dias
+            <h2
+              id="sobre-jornada"
+              class="text-3xl font-bold text-gray-800 mb-6"
+            >
+              Jornada de 21 Dias para Transformação
             </h2>
             <p class="text-lg text-gray-700 mb-6">
-              A <strong>Jornada 21 Dias</strong> foi desenvolvida para pessoas
-              que desejam transformar seus hábitos e conquistar resultados
-              visíveis de forma rápida, porém sustentável. Este programa
-              intensivo utiliza a ciência da formação de hábitos para criar
-              mudanças duradouras em apenas três semanas.
+              O <strong>Programa Jornada 21 Dias</strong> da GiNutrivida foi
+              desenvolvido para pessoas que desejam transformar sua relação com
+              a alimentação e estabelecer hábitos saudáveis duradouros. Baseado
+              em pesquisas sobre neuroplasticidade e formação de hábitos, nosso
+              programa estruturado em 21 dias oferece o tempo ideal para criar
+              mudanças significativas e sustentáveis.
             </p>
             <p class="text-lg text-gray-700 mb-6">
-              Estudos mostram que leva aproximadamente 21 dias para formar um
-              novo hábito. Aproveitando esta janela crucial, nossa jornada é
-              estruturada para maximizar suas chances de sucesso, com
-              acompanhamento diário e suporte contínuo durante todo o processo.
-            </p>
-            <p class="text-lg text-gray-700 mb-6">
-              Diferente de dietas extremas que prometem resultados instantâneos
-              à custa da sua saúde, a Jornada 21 Dias foca em transformações
-              graduais e consistentes, criando uma base sólida para um estilo de
-              vida saudável de longo prazo.
+              Mais do que uma simples dieta, esta jornada aborda aspectos
+              físicos, emocionais e comportamentais da sua relação com a comida,
+              trabalhando as raízes dos padrões alimentares e oferecendo
+              ferramentas práticas para superar desafios como compulsão
+              alimentar, ansiedade e falta de energia.
             </p>
 
             <div class="mt-10">
@@ -220,11 +445,12 @@
                   ></i>
                   <div>
                     <strong class="text-gray-800"
-                      >Plano de 21 dias completamente personalizado</strong
+                      >Plano personalizado de 21 dias</strong
                     >
                     <p class="text-gray-600">
-                      Criado especificamente para suas necessidades, objetivos e
-                      estilo de vida
+                      Estratégias nutricionais adaptadas às suas necessidades
+                      individuais, preferências alimentares e objetivos
+                      específicos
                     </p>
                   </div>
                 </li>
@@ -234,11 +460,11 @@
                   ></i>
                   <div>
                     <strong class="text-gray-800"
-                      >Acompanhamento diário via aplicativo</strong
+                      >Suporte diário via aplicativo</strong
                     >
                     <p class="text-gray-600">
-                      Receba lembretes, dicas e motivação todos os dias para
-                      manter o foco
+                      Acompanhamento constante para manter você motivado e
+                      engajado, com respostas para suas dúvidas em até 24 horas
                     </p>
                   </div>
                 </li>
@@ -251,8 +477,8 @@
                       >Material educativo exclusivo</strong
                     >
                     <p class="text-gray-600">
-                      E-books, vídeos e guias práticos para aprofundar seu
-                      conhecimento
+                      Acesso a módulos educacionais que explicam os fundamentos
+                      da nutrição e como aplicá-los no seu dia a dia
                     </p>
                   </div>
                 </li>
@@ -265,8 +491,8 @@
                       >2 consultas online com nossa especialista</strong
                     >
                     <p class="text-gray-600">
-                      No início e no final da jornada, para maximizar seus
-                      resultados
+                      Sessões individuais no início e final do programa para
+                      ajustes personalizados e garantia de resultados
                     </p>
                   </div>
                 </li>
@@ -279,289 +505,1138 @@
                       >Acesso ao grupo exclusivo de apoio</strong
                     >
                     <p class="text-gray-600">
-                      Conecte-se com outras pessoas na mesma jornada e
-                      multiplique sua motivação
+                      Comunidade de participantes para compartilhar
+                      experiências, superar desafios e celebrar conquistas
+                      juntos
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-check-circle text-emerald-600 mt-1 mr-3 text-xl"
+                  ></i>
+                  <div>
+                    <strong class="text-gray-800"
+                      >Livro de receitas práticas e saudáveis</strong
+                    >
+                    <p class="text-gray-600">
+                      Mais de 50 receitas rápidas, deliciosas e nutritivas,
+                      desenvolvidas por nossa equipe de nutricionistas
                     </p>
                   </div>
                 </li>
               </ul>
             </div>
+
+            <div
+              class="mt-12 flex flex-col md:flex-row md:items-center md:justify-between bg-emerald-50 p-6 rounded-xl"
+            >
+              <div class="mb-4 md:mb-0">
+                <span class="text-emerald-800 font-semibold"
+                  >Total de participantes já transformados:</span
+                >
+                <div class="text-3xl font-bold text-emerald-600">1.275+</div>
+              </div>
+              <a
+                href="https://practice.giselenutrivida.com/book-now"
+                target="_blank"
+                class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-lg transition shadow-md"
+              >
+                Garantir Minha Vaga <i class="fas fa-chevron-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção das 3 Fases -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-12">
+            <span
+              class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-3"
+              >Metodologia Comprovada</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              As 3 Fases da <span class="text-emerald-600">Transformação</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Nossa jornada é estruturada em três fases estratégicas, cada uma
+              construindo sobre a anterior para criar uma transformação completa
+              e duradoura
+            </p>
           </div>
 
-          <div class="bg-emerald-50 rounded-xl p-8 mb-12">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6">
-              As 3 Fases da Jornada
-            </h3>
-            <div class="grid md:grid-cols-3 gap-6">
-              <div class="bg-white rounded-lg p-6 shadow-sm">
-                <div class="flex items-center mb-3">
-                  <div
-                    class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mr-3"
-                  >
-                    <span class="font-bold">1</span>
+          <div class="relative">
+            <!-- Linha conectora -->
+            <div
+              class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-emerald-200 via-emerald-400 to-teal-500 transform -translate-y-1/2 z-0 rounded-full"
+            ></div>
+
+            <div class="grid md:grid-cols-3 gap-8 relative z-10">
+              <!-- Fase 1: Despertar -->
+              <div
+                class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden transform hover:-translate-y-2 duration-300"
+              >
+                <div class="h-3 bg-emerald-400"></div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                      <div
+                        class="bg-emerald-400 text-white text-lg font-bold w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-md"
+                      >
+                        1
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-800">Despertar</h3>
+                    </div>
+                    <span class="text-sm text-emerald-600 font-semibold"
+                      >Dias 1-7</span
+                    >
                   </div>
-                  <h4 class="text-xl font-semibold">Despertar</h4>
+
+                  <p class="text-gray-600 mb-5">
+                    Fase inicial de desintoxicação e conscientização. Neste
+                    estágio, você começará a eliminar hábitos alimentares
+                    negativos e reconhecer padrões inconscientes.
+                  </p>
+
+                  <div class="space-y-3">
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Eliminação de alimentos inflamatórios
+                      </p>
+                    </div>
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Hidratação e desintoxicação natural
+                      </p>
+                    </div>
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Criação de consciência alimentar
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p class="text-gray-600">
-                  Dias 1-7: Fase inicial de desintoxicação e conscientização,
-                  onde você começa a eliminar hábitos negativos e introduzir
-                  novos padrões.
-                </p>
               </div>
-              <div class="bg-white rounded-lg p-6 shadow-sm">
-                <div class="flex items-center mb-3">
-                  <div
-                    class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mr-3"
-                  >
-                    <span class="font-bold">2</span>
+
+              <!-- Fase 2: Transformar -->
+              <div
+                class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden transform hover:-translate-y-2 duration-300"
+              >
+                <div class="h-3 bg-emerald-500"></div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                      <div
+                        class="bg-emerald-500 text-white text-lg font-bold w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-md"
+                      >
+                        2
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-800">
+                        Transformar
+                      </h3>
+                    </div>
+                    <span class="text-sm text-emerald-600 font-semibold"
+                      >Dias 8-14</span
+                    >
                   </div>
-                  <h4 class="text-xl font-semibold">Transformar</h4>
+
+                  <p class="text-gray-600 mb-5">
+                    Intensificação das mudanças e superação de desafios. Nesta
+                    fase, você estará fortalecendo seus novos hábitos e
+                    enfrentando resistências.
+                  </p>
+
+                  <div class="space-y-3">
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Implementação de rotinas alimentares
+                      </p>
+                    </div>
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Superação de compulsões e desejos
+                      </p>
+                    </div>
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Ajustes personalizados do plano
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p class="text-gray-600">
-                  Dias 8-14: Intensificação das mudanças e superação de
-                  desafios, com foco em consolidar os novos hábitos e enfrentar
-                  resistências.
-                </p>
               </div>
-              <div class="bg-white rounded-lg p-6 shadow-sm">
-                <div class="flex items-center mb-3">
-                  <div
-                    class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mr-3"
-                  >
-                    <span class="font-bold">3</span>
+
+              <!-- Fase 3: Integrar -->
+              <div
+                class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden transform hover:-translate-y-2 duration-300"
+              >
+                <div class="h-3 bg-emerald-600"></div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                      <div
+                        class="bg-emerald-600 text-white text-lg font-bold w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-md"
+                      >
+                        3
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-800">Integrar</h3>
+                    </div>
+                    <span class="text-sm text-emerald-600 font-semibold"
+                      >Dias 15-21</span
+                    >
                   </div>
-                  <h4 class="text-xl font-semibold">Integrar</h4>
+
+                  <p class="text-gray-600 mb-5">
+                    Consolidação dos resultados e preparação para o longo prazo.
+                    Neste estágio final, você estará transformando mudanças em
+                    seu novo estilo de vida.
+                  </p>
+
+                  <div class="space-y-3">
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Plano de manutenção personalizado
+                      </p>
+                    </div>
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Estratégias para eventos sociais
+                      </p>
+                    </div>
+                    <div class="flex items-start">
+                      <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                      <p class="text-gray-700">
+                        Avaliação final e próximos passos
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p class="text-gray-600">
-                  Dias 15-21: Consolidação dos resultados e preparação para
-                  manutenção a longo prazo, garantindo que as mudanças se tornem
-                  seu novo normal.
-                </p>
               </div>
             </div>
           </div>
 
-          <!-- Resultados -->
-          <div class="bg-white rounded-xl shadow-md p-8 mb-12">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
-              Resultados que Você Pode Esperar
-            </h3>
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <ul class="space-y-4">
+          <!-- Call to Action -->
+          <div class="mt-12 text-center">
+            <a
+              href="#resultados"
+              class="inline-flex items-center text-emerald-800 hover:text-emerald-700 font-bold"
+            >
+              Ver Resultados Que Você Pode Esperar
+              <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programas para as Fases -->
+    <section class="py-16 bg-emerald-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-10">
+            <span
+              class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-3"
+              >Metodologia Comprovada</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              As 3 Fases da <span class="text-emerald-600">Transformação</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Nossa jornada é estruturada em três fases estratégicas, cada uma
+              construindo sobre a anterior para criar uma transformação completa
+              e duradoura
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Fase 1: Despertar -->
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-sm transition duration-300 hover:-translate-y-1"
+            >
+              <div class="relative h-48 overflow-hidden">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-emerald-900 to-transparent opacity-70"
+                ></div>
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Fase Despertar"
+                  class="w-full h-full object-cover"
+                />
+                <h4
+                  class="absolute bottom-4 left-4 text-white text-xl font-bold"
+                >
+                  Fase 1: Despertar
+                </h4>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-2 text-gray-700">
                   <li class="flex items-start">
-                    <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Aumento significativo de energia e disposição</span
-                    >
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Avaliação inicial e definição de metas</span>
                   </li>
                   <li class="flex items-start">
-                    <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Melhora na qualidade do sono</span
-                    >
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Identificação de gatilhos alimentares</span>
                   </li>
                   <li class="flex items-start">
-                    <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Redução de inchaço e desconfortos digestivos</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Maior clareza mental e foco</span
-                    >
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Introdução de novos padrões alimentares</span>
                   </li>
                 </ul>
+                <a
+                  href="#resultados"
+                  class="block mt-4 text-center bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-lg transition"
+                >
+                  Ver Detalhes
+                </a>
               </div>
-              <div>
-                <ul class="space-y-4">
+            </div>
+
+            <!-- Fase 2: Transformar -->
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-sm transition duration-300 hover:-translate-y-1"
+            >
+              <div class="relative h-48 overflow-hidden">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-emerald-900 to-transparent opacity-70"
+                ></div>
+                <img
+                  src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Fase Transformar"
+                  class="w-full h-full object-cover"
+                />
+                <h4
+                  class="absolute bottom-4 left-4 text-white text-xl font-bold"
+                >
+                  Fase 2: Transformar
+                </h4>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-2 text-gray-700">
                   <li class="flex items-start">
-                    <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Perda de peso saudável (para quem necessita)</span
-                    >
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Consolidação dos novos hábitos</span>
                   </li>
                   <li class="flex items-start">
-                    <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Redução de desejos por alimentos processados</span
-                    >
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Estratégias para superar obstáculos</span>
                   </li>
                   <li class="flex items-start">
-                    <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Melhora na aparência da pele</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Estabelecimento de hábitos duradouros</span
-                    >
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Nutrição para aumento de energia</span>
                   </li>
                 </ul>
+                <a
+                  href="#resultados"
+                  class="block mt-4 text-center bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-lg transition"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+
+            <!-- Fase 3: Integrar -->
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-sm transition duration-300 hover:-translate-y-1"
+            >
+              <div class="relative h-48 overflow-hidden">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-emerald-900 to-transparent opacity-70"
+                ></div>
+                <img
+                  src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80"
+                  alt="Fase Integrar"
+                  class="w-full h-full object-cover"
+                />
+                <h4
+                  class="absolute bottom-4 left-4 text-white text-xl font-bold"
+                >
+                  Fase 3: Integrar
+                </h4>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Planejamento para manutenção a longo prazo</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Adaptação dos hábitos a diferentes situações</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-emerald-600 mt-1 mr-2"></i>
+                    <span>Prevenção de recaídas</span>
+                  </li>
+                </ul>
+                <a
+                  href="#resultados"
+                  class="block mt-4 text-center bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-lg transition"
+                >
+                  Ver Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+            Benefícios da Jornada 21 Dias
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <div class="flex items-start mb-4">
+                <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-bolt text-emerald-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-gray-800">
+                    Mais Energia e Disposição
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Eliminação da sensação de letargia e cansaço constante
+                    através de uma nutrição balanceada e estratégias para
+                    melhorar a qualidade do sono.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start mb-4">
+                <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-brain text-emerald-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-gray-800">
+                    Clareza Mental
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Melhora na concentração, redução da névoa mental e maior
+                    produtividade através de nutrientes que potencializam o
+                    funcionamento cerebral.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-start mb-4">
+                <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-heartbeat text-emerald-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-gray-800">
+                    Saúde Digestiva Melhorada
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Redução de inchaço, gases e desconforto, além de melhora no
+                    funcionamento intestinal e fortalecimento da microbiota.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start mb-4">
+                <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-balance-scale text-emerald-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-gray-800">
+                    Relação Saudável com a Comida
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Desenvolvimento de uma mentalidade equilibrada sobre
+                    alimentação, eliminando culpas e restrições excessivas que
+                    levam a ciclos de compulsão.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-10">
+            <span
+              class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-3"
+              >O Que Esperar</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Resultados <span class="text-emerald-600">Transformadores</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Nossos participantes relatam mudanças significativas em diversas
+              áreas da saúde e bem-estar ao completarem a Jornada 21 Dias
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-white rounded-xl shadow-md hover:shadow-lg p-6 transition border-t-4 border-emerald-400 hover:-translate-y-1 duration-300"
+            >
+              <div class="flex justify-center mb-4">
+                <div
+                  class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center shadow-sm"
+                >
+                  <i class="fas fa-bolt text-emerald-500 text-2xl"></i>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-3">
+                Energia Renovada
+              </h3>
+              <p class="text-gray-600 text-center">
+                Aumento significativo nos níveis de energia e disposição,
+                eliminando a fadiga constante e a sensação de letargia.
+              </p>
+              <div class="mt-4 pt-4 border-t border-gray-100">
+                <div
+                  class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-emerald-400 h-full rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                  <span>Antes</span>
+                  <span class="font-bold text-emerald-600">85% de melhora</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl shadow-md hover:shadow-lg p-6 transition border-t-4 border-emerald-400 hover:-translate-y-1 duration-300"
+            >
+              <div class="flex justify-center mb-4">
+                <div
+                  class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center shadow-sm"
+                >
+                  <i class="fas fa-moon text-emerald-500 text-2xl"></i>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-3">
+                Sono Restaurador
+              </h3>
+              <p class="text-gray-600 text-center">
+                Melhora na qualidade do sono, com maior facilidade para
+                adormecer e acordar descansado, sem interrupções noturnas.
+              </p>
+              <div class="mt-4 pt-4 border-t border-gray-100">
+                <div
+                  class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-emerald-400 h-full rounded-full"
+                    style="width: 78%"
+                  ></div>
+                </div>
+                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                  <span>Antes</span>
+                  <span class="font-bold text-emerald-600">78% de melhora</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl shadow-md hover:shadow-lg p-6 transition border-t-4 border-emerald-500 hover:-translate-y-1 duration-300"
+            >
+              <div class="flex justify-center mb-4">
+                <div
+                  class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center shadow-sm"
+                >
+                  <i class="fas fa-cookie-bite text-emerald-500 text-2xl"></i>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-3">
+                Controle de Compulsões
+              </h3>
+              <p class="text-gray-600 text-center">
+                Redução significativa dos desejos por alimentos processados e
+                açúcares, com maior controle sobre impulsos alimentares.
+              </p>
+              <div class="mt-4 pt-4 border-t border-gray-100">
+                <div
+                  class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-emerald-500 h-full rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                  <span>Antes</span>
+                  <span class="font-bold text-emerald-600">90% de melhora</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl shadow-md hover:shadow-lg p-6 transition border-t-4 border-emerald-500 hover:-translate-y-1 duration-300"
+            >
+              <div class="flex justify-center mb-4">
+                <div
+                  class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center shadow-sm"
+                >
+                  <i class="fas fa-brain text-emerald-500 text-2xl"></i>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-3">
+                Clareza Mental
+              </h3>
+              <p class="text-gray-600 text-center">
+                Maior foco, concentração e clareza mental, com redução da
+                sensação de "névoa cerebral" e aumento da produtividade.
+              </p>
+              <div class="mt-4 pt-4 border-t border-gray-100">
+                <div
+                  class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-emerald-500 h-full rounded-full"
+                    style="width: 82%"
+                  ></div>
+                </div>
+                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                  <span>Antes</span>
+                  <span class="font-bold text-emerald-600">82% de melhora</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Depoimentos -->
-          <div class="mb-12">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
-              O que nossos participantes dizem
-            </h3>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div
-                class="bg-white rounded-xl shadow-sm p-6 border border-gray-100"
-              >
-                <div class="flex items-center mb-4">
-                  <div class="text-yellow-400 flex mr-2">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <span class="text-gray-600">5.0</span>
+          <div class="grid md:grid-cols-2 gap-8 mt-10">
+            <div
+              class="bg-white rounded-xl shadow-md hover:shadow-lg p-8 transition border-l-4 border-emerald-600 hover:-translate-y-1 duration-300"
+            >
+              <div class="flex items-start mb-6">
+                <div class="bg-emerald-100 p-3 rounded-full mr-5">
+                  <i class="fas fa-weight text-emerald-600 text-xl"></i>
                 </div>
-                <p class="text-gray-700 italic mb-4">
-                  "Os 21 dias foram transformadores! Perdi 4kg, mas o mais
-                  importante foi a mudança na minha relação com a comida. Não
-                  sinto mais aquela compulsão por doces que me atormentava. A
-                  Gisele tem um jeito único de ensinar e motivar. Super
-                  recomendo!"
-                </p>
-                <div class="flex items-center">
-                  <div
-                    class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
-                  >
-                    <span class="text-emerald-700 font-bold">JF</span>
-                  </div>
-                  <div>
-                    <h5 class="font-semibold">Julia F.</h5>
-                    <p class="text-sm text-gray-500">Participou em 2024</p>
-                  </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    Composição Corporal Saudável
+                  </h3>
+                  <p class="text-gray-600">
+                    Participantes relatam perda média de 3-5kg durante o
+                    programa, com foco na redução de gordura corporal e
+                    diminuição de inchaço, resultando em uma silhueta mais
+                    definida e saudável.
+                  </p>
                 </div>
               </div>
               <div
-                class="bg-white rounded-xl shadow-sm p-6 border border-gray-100"
+                class="flex items-center justify-between bg-emerald-50 p-4 rounded-lg"
               >
-                <div class="flex items-center mb-4">
-                  <div class="text-yellow-400 flex mr-2">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <span class="text-gray-600">5.0</span>
+                <div class="text-center px-4">
+                  <div class="text-2xl font-bold text-emerald-700">87%</div>
+                  <p class="text-xs text-gray-500">Reduziram Medidas</p>
                 </div>
-                <p class="text-gray-700 italic mb-4">
-                  "Como profissional com agenda lotada, sempre achei que não
-                  tinha tempo para cuidar da alimentação. A Jornada 21 Dias me
-                  mostrou o contrário! O plano é prático e adaptado à rotina
-                  corrida. Minha energia disparou e minha concentração melhorou
-                  muito. Já estou no segundo ciclo!"
-                </p>
-                <div class="flex items-center">
-                  <div
-                    class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
-                  >
-                    <span class="text-emerald-700 font-bold">MB</span>
-                  </div>
-                  <div>
-                    <h5 class="font-semibold">Marcelo B.</h5>
-                    <p class="text-sm text-gray-500">Participou em 2024</p>
-                  </div>
+                <div class="h-8 w-px bg-emerald-200"></div>
+                <div class="text-center px-4">
+                  <div class="text-2xl font-bold text-emerald-700">93%</div>
+                  <p class="text-xs text-gray-500">Menos Inchaço</p>
+                </div>
+                <div class="h-8 w-px bg-emerald-200"></div>
+                <div class="text-center px-4">
+                  <div class="text-2xl font-bold text-emerald-700">95%</div>
+                  <p class="text-xs text-gray-500">Mais Disposição</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl shadow-md hover:shadow-lg p-8 transition border-l-4 border-emerald-600 hover:-translate-y-1 duration-300"
+            >
+              <div class="flex items-start mb-6">
+                <div class="bg-emerald-100 p-3 rounded-full mr-5">
+                  <i class="fas fa-heartbeat text-emerald-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    Saúde Digestiva e Hormonal
+                  </h3>
+                  <p class="text-gray-600">
+                    Melhora significativa em sintomas digestivos como inchaço,
+                    gases e desconforto. Muitas mulheres reportam alívio em
+                    sintomas de TPM, cólicas e regularização do ciclo menstrual.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-center justify-between bg-emerald-50 p-4 rounded-lg"
+              >
+                <div class="text-center px-4">
+                  <div class="text-2xl font-bold text-emerald-700">91%</div>
+                  <p class="text-xs text-gray-500">Melhora Digestiva</p>
+                </div>
+                <div class="h-8 w-px bg-emerald-200"></div>
+                <div class="text-center px-4">
+                  <div class="text-2xl font-bold text-emerald-700">84%</div>
+                  <p class="text-xs text-gray-500">Equilíbrio Hormonal</p>
+                </div>
+                <div class="h-8 w-px bg-emerald-200"></div>
+                <div class="text-center px-4">
+                  <div class="text-2xl font-bold text-emerald-700">89%</div>
+                  <p class="text-xs text-gray-500">Menos Inflamação</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CTA -->
+          <!-- Botão CTA -->
+          <div class="mt-12 text-center">
+            <a
+              href="https://practice.giselenutrivida.com/book-now"
+              target="_blank"
+              class="inline-block bg-emerald-800 hover:bg-emerald-700 text-white font-bold py-4 px-10 rounded-lg transition shadow-lg"
+            >
+              Quero Transformar Minha Saúde
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="mb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+            Participantes que Transformaram seus Hábitos
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div
+              class="bg-white rounded-xl shadow-sm p-6 border border-gray-100"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-yellow-400 flex mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="text-gray-600">5.0</span>
+              </div>
+              <p class="text-gray-700 italic mb-4">
+                "A Jornada 21 Dias mudou completamente minha relação com a
+                comida. Perdi 4kg sem passar fome ou fazer dietas restritivas, e
+                o melhor: consegui manter o peso. Mas o mais importante foi a
+                transformação na minha energia - acordo disposta e não tenho
+                mais aquela queda de energia no meio da tarde."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+                >
+                  <span class="text-emerald-700 font-bold">CM</span>
+                </div>
+                <div>
+                  <h5 class="font-semibold text-gray-800">Carla M.</h5>
+                  <p class="text-sm text-gray-500">Professora • 38 anos</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow-sm p-6 border border-gray-100"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-yellow-400 flex mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="text-gray-600">5.0</span>
+              </div>
+              <p class="text-gray-700 italic mb-4">
+                "Entrei no programa buscando emagrecer, mas saí com muito mais.
+                Além de perder 6kg em 21 dias, aprendi a entender os sinais do
+                meu corpo e parei com os episódios de compulsão alimentar que me
+                acompanhavam há anos. O suporte diário e o material educativo
+                fizeram toda a diferença no meu processo."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+                >
+                  <span class="text-emerald-700 font-bold">RS</span>
+                </div>
+                <div>
+                  <h5 class="font-semibold text-gray-800">Ricardo S.</h5>
+                  <p class="text-sm text-gray-500">Engenheiro • 42 anos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="margin-bottom: 48px">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 16px">
+        <div style="max-width: 1024px; margin: 0 auto">
           <div
-            class="bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-xl p-8 text-white text-center mb-12"
+            style="
+              background: linear-gradient(to right, #059669, #064e3b);
+              color: white;
+              border-radius: 12px;
+              padding: 32px;
+              text-align: center;
+            "
           >
-            <h3 class="text-2xl font-bold mb-4">
-              Pronto para transformar sua vida em 21 dias?
+            <h3
+              style="
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 16px;
+                color: white;
+              "
+            >
+              Comece sua transformação agora
             </h3>
-            <p class="text-lg mb-6 max-w-2xl mx-auto">
-              Três semanas podem mudar completamente sua relação com a
-              alimentação, energia e bem-estar. Comece sua jornada hoje e
-              descubra o que é possível alcançar com orientação especializada e
-              um plano estruturado.
+            <p
+              style="
+                font-size: 1.125rem;
+                margin-bottom: 24px;
+                max-width: 42rem;
+                margin-left: auto;
+                margin-right: auto;
+                color: white;
+              "
+            >
+              Transforme sua relação com a alimentação e crie hábitos saudáveis
+              duradouros com um programa personalizado baseado na ciência da
+              formação de hábitos.
             </p>
             <a
               href="https://practice.giselenutrivida.com/book-now"
               target="_blank"
-              class="inline-block bg-white text-emerald-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition shadow-md"
+              style="
+                display: inline-block;
+                background-color: white;
+                color: #064e3b;
+                font-weight: bold;
+                padding: 12px 32px;
+                border-radius: 8px;
+                text-decoration: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              "
             >
               Garantir Minha Vaga
             </a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- FAQ -->
-          <div class="bg-white rounded-xl shadow-md p-8">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6">
-              Perguntas Frequentes
-            </h3>
-            <div class="space-y-6">
-              <div>
-                <h4 class="text-xl font-semibold text-gray-800 mb-2">
-                  Preciso ter experiência prévia com alimentação saudável?
-                </h4>
-                <p class="text-gray-700">
-                  Não! A Jornada 21 Dias foi desenhada para pessoas em todos os
-                  níveis, do iniciante ao avançado. O programa é adaptado ao seu
-                  conhecimento atual e fornece todo o suporte necessário,
-                  independente da sua experiência.
+    <!-- FAQ -->
+    <section class="bg-white rounded-xl shadow-md p-8 mb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">
+            Perguntas Frequentes
+          </h3>
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                Preciso ter experiência com alimentação saudável?
+              </h4>
+              <p class="text-gray-700">
+                Não, o programa foi desenhado para ser acessível a todos,
+                independentemente da sua experiência prévia. Começamos do básico
+                e avançamos gradualmente, fornecendo todo o suporte necessário
+                em cada etapa do processo.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                Quanto tempo preciso dedicar diariamente?
+              </h4>
+              <p class="text-gray-700">
+                O programa requer aproximadamente 15-30 minutos por dia para
+                revisão de conteúdos, planejamento de refeições e reflexões
+                guiadas. O tempo de preparo de alimentos varia conforme suas
+                escolhas, mas oferecemos muitas opções rápidas e práticas para
+                rotinas ocupadas.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                Vou receber um plano alimentar detalhado?
+              </h4>
+              <p class="text-gray-700">
+                Sim, você receberá um plano alimentar personalizado baseado nas
+                suas necessidades, preferências e objetivos. No entanto, o
+                programa vai além de simplesmente dizer o que comer - ensinamos
+                princípios que permitem fazer escolhas saudáveis em qualquer
+                situação.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                O que acontece após os 21 dias?
+              </h4>
+              <p class="text-gray-700">
+                Na última fase do programa, desenvolvemos estratégias
+                específicas para manutenção a longo prazo. Além disso,
+                oferecemos opções de acompanhamento contínuo para quem deseja
+                suporte adicional após a conclusão do programa principal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section
+      style="
+        position: relative;
+        padding: 64px 0 80px;
+        background: linear-gradient(to right, #047857, #059669);
+        color: white;
+        overflow: hidden;
+      "
+    >
+      <!-- Formas decorativas -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 256px;
+          height: 256px;
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          margin-top: -128px;
+          margin-left: -128px;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 384px;
+          height: 384px;
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          margin-bottom: -192px;
+          margin-right: -192px;
+        "
+      ></div>
+
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 16px;
+          position: relative;
+          z-index: 10;
+        "
+      >
+        <div style="max-width: 1024px; margin: 0 auto; text-align: center">
+          <span
+            style="
+              display: inline-block;
+              padding: 4px 12px;
+              border-radius: 9999px;
+              background-color: rgba(255, 255, 255, 0.2);
+              color: white;
+              font-size: 0.875rem;
+              font-weight: 600;
+              margin-bottom: 16px;
+            "
+          >
+            Sua Transformação Começa Aqui
+          </span>
+          <h2
+            style="
+              font-size: 2rem;
+              font-weight: bold;
+              margin-bottom: 24px;
+              color: white;
+            "
+          >
+            Transforme Sua Vida em Apenas
+            <span style="color: #a7f3d0">21 Dias</span>
+          </h2>
+          <p
+            style="
+              font-size: 1.25rem;
+              margin-bottom: 32px;
+              max-width: 42rem;
+              margin-left: auto;
+              margin-right: auto;
+              color: #ecfdf5;
+            "
+          >
+            Três semanas podem mudar completamente sua relação com a
+            alimentação, energia e bem-estar. Comece sua jornada hoje e descubra
+            o que é possível alcançar com orientação especializada.
+          </p>
+
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              justify-content: center;
+              margin-bottom: 32px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                justify-content: center;
+              "
+            >
+              <a
+                href="https://practice.giselenutrivida.com/book-now"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  background-color: white;
+                  color: #064e3b;
+                  font-weight: bold;
+                  padding: 16px 32px;
+                  border-radius: 8px;
+                  text-decoration: none;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                "
+              >
+                Garantir Minha Vaga
+                <i class="fas fa-arrow-right" style="margin-left: 8px"></i>
+              </a>
+              <a
+                href="https://wa.me/551100000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20Jornada%2021%20Dias"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  background-color: #064e3b;
+                  color: white;
+                  font-weight: bold;
+                  padding: 16px 32px;
+                  border-radius: 8px;
+                  text-decoration: none;
+                  border: 2px solid white;
+                "
+              >
+                <i class="fab fa-whatsapp" style="margin-right: 8px"></i> Tirar
+                Dúvidas
+              </a>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 16px;
+              color: white;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  background-color: #064e3b;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-right: 12px;
+                "
+              >
+                <i class="fas fa-calendar-check" style="color: white"></i>
+              </div>
+              <div style="text-align: left">
+                <p style="font-weight: bold; font-size: 1rem; color: white">
+                  Próxima Turma
+                </p>
+                <p style="font-size: 0.875rem; color: #a7f3d0">
+                  Início em 1 de Julho
                 </p>
               </div>
-              <div>
-                <h4 class="text-xl font-semibold text-gray-800 mb-2">
-                  Quanto tempo preciso dedicar diariamente ao programa?
-                </h4>
-                <p class="text-gray-700">
-                  O programa foi criado pensando em pessoas com rotinas
-                  ocupadas. Você precisará de aproximadamente 20-30 minutos por
-                  dia para preparação de refeições e acompanhamento das
-                  orientações. O material educativo pode ser consumido no seu
-                  próprio ritmo.
+            </div>
+
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  background-color: #064e3b;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-right: 12px;
+                "
+              >
+                <i class="fas fa-user-friends" style="color: white"></i>
+              </div>
+              <div style="text-align: left">
+                <p style="font-weight: bold; font-size: 1rem; color: white">
+                  Vagas Limitadas
+                </p>
+                <p style="font-size: 0.875rem; color: #a7f3d0">
+                  Apenas 20 por turma
                 </p>
               </div>
-              <div>
-                <h4 class="text-xl font-semibold text-gray-800 mb-2">
-                  O programa inclui planos de refeições específicos?
-                </h4>
-                <p class="text-gray-700">
-                  Sim! Você receberá um plano alimentar personalizado para os 21
-                  dias, com opções e alternativas para se adaptar à sua
-                  realidade. Não trabalhamos com restrições extremas, mas com
-                  escolhas conscientes e sustentáveis.
-                </p>
+            </div>
+
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  background-color: #064e3b;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-right: 12px;
+                "
+              >
+                <i class="fas fa-shield-alt" style="color: white"></i>
               </div>
-              <div>
-                <h4 class="text-xl font-semibold text-gray-800 mb-2">
-                  Como será o acompanhamento durante o programa?
-                </h4>
-                <p class="text-gray-700">
-                  Você terá acesso a um aplicativo exclusivo onde receberá
-                  orientações diárias, poderá registrar seu progresso e terá
-                  contato direto com nossa equipe. Além disso, haverá duas
-                  consultas online com nossa especialista e acesso ao grupo de
-                  apoio.
+              <div style="text-align: left">
+                <p style="font-weight: bold; font-size: 1rem; color: white">
+                  Garantia
                 </p>
-              </div>
-              <div>
-                <h4 class="text-xl font-semibold text-gray-800 mb-2">
-                  O que acontece após os 21 dias?
-                </h4>
-                <p class="text-gray-700">
-                  Na consulta final, você receberá um plano de manutenção
-                  personalizado para continuar sua jornada. Também oferecemos
-                  opções de acompanhamento contínuo para quem deseja estender os
-                  benefícios e aprofundar as transformações alcançadas.
+                <p style="font-size: 0.875rem; color: #a7f3d0">
+                  Satisfação ou Dinheiro de Volta
                 </p>
               </div>
             </div>
@@ -671,7 +1746,7 @@
     <a
       href="https://wa.me/551100000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20Jornada%2021%20Dias"
       target="_blank"
-      class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg z-50 transition"
+      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg z-50 transition"
     >
       <i class="fab fa-whatsapp text-3xl"></i>
     </a>
