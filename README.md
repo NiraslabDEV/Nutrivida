@@ -1,6 +1,6 @@
-# Gisele Nutrivida - Site Institucional
+# GiNutrivida - Site Institucional
 
-Site oficial da Gisele Nutrivida, uma nutricionista especializada em avaliação de composição corporal, planos nutricionais personalizados e programas de saúde.
+Site oficial da GiNutrivida, uma plataforma de coaching de saúde holística especializada em avaliação de composição corporal, planos nutricionais personalizados e programas de saúde.
 
 ## Estrutura do Projeto
 
@@ -74,4 +74,4 @@ Detalhes para integração futura estão documentados no arquivo de planejamento
 
 ---
 
-© 2025 Gisele Nutrivida. Todos os direitos reservados.
+© 2025 GiNutrivida. Todos os direitos reservados.

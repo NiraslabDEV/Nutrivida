@@ -1,4 +1,4 @@
-// Script para o site Gisele Nutrivida
+// Script para o site GiNutrivida
 
 // Espera o DOM carregar completamente
 document.addEventListener("DOMContentLoaded", function () {

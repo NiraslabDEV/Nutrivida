@@ -17,14 +17,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="icon" href="images/Logo.png" type="image/png">
+    <link rel="icon" href="images/Logo.png" type="image/png" />
     <style>
       @keyframes heartbeat {
-        0% { transform: scale(1); }
-        25% { transform: scale(1.05); }
-        50% { transform: scale(1); }
-        75% { transform: scale(1.05); }
-        100% { transform: scale(1); }
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.05);
+        }
+        50% {
+          transform: scale(1);
+        }
+        75% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
 
       .logo-img {
@@ -44,7 +54,11 @@
         class="container mx-auto px-4 py-3 flex justify-between items-center"
       >
         <a href="index.html" class="flex items-center space-x-2 text-green-600">
-          <img src="images/Logo.png" alt="GiNutrivida Logo" class="h-10 logo-img">
+          <img
+            src="images/Logo.png"
+            alt="GiNutrivida Logo"
+            class="h-10 logo-img"
+          />
           <span class="text-2xl font-bold">GiNutrivida</span>
         </a>
         <!-- Menu para Desktop -->
@@ -700,6 +714,411 @@
           </form>
         </div>
 
+        <!-- Questionário de Avaliação -->
+        <div class="p-8 border-b border-gray-100 bg-gray-50">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">
+            Descubra o Programa Ideal para Você
+          </h2>
+          <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
+            Responda às perguntas abaixo para descobrirmos qual programa da
+            GiNutrivida é mais adequado para o seu momento atual e necessidades
+            específicas.
+          </p>
+
+          <div
+            id="quiz-container"
+            class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md"
+          >
+            <div id="question-container" class="mb-6">
+              <!-- Questão 1 -->
+              <div class="question" data-question="1">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                  1. Qual é o seu principal objetivo com a alimentação e saúde?
+                </h3>
+                <div class="space-y-3">
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q1" value="A" class="mt-1 mr-3" />
+                    <span>Perder peso de forma saudável e duradoura</span>
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q1" value="B" class="mt-1 mr-3" />
+                    <span
+                      >Melhorar minha relação com a comida e entender meu
+                      corpo</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q1" value="C" class="mt-1 mr-3" />
+                    <span
+                      >Resolver problemas específicos de saúde (diabetes,
+                      colesterol, etc.)</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q1" value="D" class="mt-1 mr-3" />
+                    <span
+                      >Criar novos hábitos em um curto período de tempo</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q1" value="E" class="mt-1 mr-3" />
+                    <span
+                      >Melhorar meu desempenho esportivo através da
+                      nutrição</span
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <!-- Questão 2 -->
+              <div class="question hidden" data-question="2">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                  2. Quanto tempo você pode dedicar a mudanças na sua
+                  alimentação?
+                </h3>
+                <div class="space-y-3">
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q2" value="A" class="mt-1 mr-3" />
+                    <span
+                      >Tenho pouco tempo, preciso de algo prático e rápido</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q2" value="B" class="mt-1 mr-3" />
+                    <span
+                      >Posso dedicar 3 semanas para uma transformação
+                      intensiva</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q2" value="C" class="mt-1 mr-3" />
+                    <span
+                      >Estou disposto a investir 2-3 meses para resultados mais
+                      profundos</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q2" value="D" class="mt-1 mr-3" />
+                    <span>Busco um acompanhamento contínuo de longo prazo</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Questão 3 -->
+              <div class="question hidden" data-question="3">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                  3. Quais desafios você enfrenta atualmente com sua
+                  alimentação?
+                </h3>
+                <div class="space-y-3">
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q3" value="A" class="mt-1 mr-3" />
+                    <span
+                      >Compulsão alimentar ou dificuldade de controle com certos
+                      alimentos</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q3" value="B" class="mt-1 mr-3" />
+                    <span>Desregulação hormonal ou metabólica</span>
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q3" value="C" class="mt-1 mr-3" />
+                    <span>Falta de energia e disposição durante o dia</span>
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q3" value="D" class="mt-1 mr-3" />
+                    <span>Alimentação irregular devido à rotina agitada</span>
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q3" value="E" class="mt-1 mr-3" />
+                    <span
+                      >Dificuldade em manter um peso saudável apesar dos
+                      esforços</span
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <!-- Questão 4 -->
+              <div class="question hidden" data-question="4">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                  4. Qual estilo de acompanhamento funciona melhor para você?
+                </h3>
+                <div class="space-y-3">
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q4" value="A" class="mt-1 mr-3" />
+                    <span
+                      >Prefiro um guia completo e detalhado para seguir
+                      sozinho</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q4" value="B" class="mt-1 mr-3" />
+                    <span
+                      >Gosto de acompanhamento frequente e orientação
+                      constante</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q4" value="C" class="mt-1 mr-3" />
+                    <span
+                      >Funciono bem com metas e desafios de curto prazo</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q4" value="D" class="mt-1 mr-3" />
+                    <span
+                      >Preciso de um sistema estruturado e baseado em
+                      dados</span
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <!-- Questão 5 -->
+              <div class="question hidden" data-question="5">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                  5. Você já tentou outras abordagens alimentares antes?
+                </h3>
+                <div class="space-y-3">
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q5" value="A" class="mt-1 mr-3" />
+                    <span
+                      >Sim, já tentei várias dietas sem sucesso duradouro</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q5" value="B" class="mt-1 mr-3" />
+                    <span
+                      >Sim, tive alguns resultados, mas não consegui
+                      manter</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q5" value="C" class="mt-1 mr-3" />
+                    <span
+                      >Estou começando agora, nunca segui uma dieta
+                      estruturada</span
+                    >
+                  </label>
+                  <label
+                    class="flex items-start p-3 border rounded-lg hover:bg-green-50 cursor-pointer transition"
+                  >
+                    <input type="radio" name="q5" value="D" class="mt-1 mr-3" />
+                    <span
+                      >Já tenho hábitos saudáveis, mas quero otimizar
+                      resultados</span
+                    >
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-between mt-6">
+              <button
+                id="prev-btn"
+                class="hidden px-6 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition"
+              >
+                Anterior
+              </button>
+              <button
+                id="next-btn"
+                class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+              >
+                Próxima
+              </button>
+              <button
+                id="submit-btn"
+                class="hidden px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+              >
+                Ver Resultado
+              </button>
+            </div>
+          </div>
+
+          <!-- Resultados do Questionário -->
+          <div id="results-container" class="hidden max-w-4xl mx-auto mt-8">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                Seu Programa Recomendado
+              </h3>
+
+              <div
+                id="result-programa-descoberta"
+                class="result-program hidden"
+              >
+                <div class="flex items-start mb-6">
+                  <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-compass text-green-600 text-2xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-800">
+                      Programa Descoberta
+                    </h4>
+                    <p class="text-gray-600 mt-2">
+                      Este programa é ideal para você que está iniciando sua
+                      jornada de transformação e deseja entender melhor sua
+                      relação com a alimentação. Através de uma abordagem
+                      personalizada, você aprenderá a criar hábitos saudáveis
+                      que se adaptam ao seu estilo de vida único.
+                    </p>
+                    <a
+                      href="programa-descoberta.html"
+                      class="inline-block mt-4 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+                    >
+                      Conhecer o Programa Descoberta
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="result-jornada-21-dias" class="result-program hidden">
+                <div class="flex items-start mb-6">
+                  <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                    <i
+                      class="fas fa-calendar-check text-emerald-600 text-2xl"
+                    ></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-800">
+                      Jornada 21 Dias
+                    </h4>
+                    <p class="text-gray-600 mt-2">
+                      Perfeito para você que busca resultados rápidos com uma
+                      abordagem intensiva de curto prazo. Este programa utiliza
+                      a ciência da formação de hábitos para criar mudanças
+                      duradouras em apenas três semanas, com acompanhamento
+                      diário e suporte contínuo.
+                    </p>
+                    <a
+                      href="programa-jornada-21-dias.html"
+                      class="inline-block mt-4 px-6 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition"
+                    >
+                      Conhecer a Jornada 21 Dias
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="result-equilibrio-metabolico"
+                class="result-program hidden"
+              >
+                <div class="flex items-start mb-6">
+                  <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-balance-scale text-blue-600 text-2xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-800">
+                      Equilíbrio Metabólico
+                    </h4>
+                    <p class="text-gray-600 mt-2">
+                      Este programa é ideal para você que enfrenta desafios
+                      metabólicos ou hormonais. Baseado no protocolo Metabolic
+                      Balance®, oferece um plano personalizado com base em
+                      exames de sangue para otimizar seu metabolismo e promover
+                      perda de peso sustentável.
+                    </p>
+                    <a
+                      href="programa-equilibrio-metabolico.html"
+                      class="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                    >
+                      Conhecer o Equilíbrio Metabólico
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="result-estilo-igbas" class="result-program hidden">
+                <div class="flex items-start mb-6">
+                  <div class="bg-purple-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-heart-pulse text-purple-600 text-2xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-800">
+                      Estilo de Vida com IGBas
+                    </h4>
+                    <p class="text-gray-600 mt-2">
+                      Recomendado para você que busca uma transformação profunda
+                      e duradoura. Este programa foca na redução da inflamação,
+                      equilíbrio glicêmico e adaptação do corpo a queimar
+                      gordura como combustível principal, trazendo benefícios
+                      para a saúde como um todo.
+                    </p>
+                    <a
+                      href="programa-estilo-igbas.html"
+                      class="inline-block mt-4 px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
+                    >
+                      Conhecer o Estilo de Vida com IGBas
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-gray-200">
+                <h4 class="text-lg font-bold text-gray-800 mb-3">
+                  Próximos Passos
+                </h4>
+                <p class="text-gray-600 mb-4">
+                  Esta recomendação é baseada nas suas respostas, mas cada
+                  pessoa é única. Para uma avaliação completa e personalizada,
+                  recomendamos agendar sua consulta introdutória gratuita.
+                </p>
+                <a
+                  href="https://ginutrivida.practicebetter.io/#/61d661603980330f64c8e552/bookings?c=6688637b6730cf11396be384&step=course"
+                  target="_blank"
+                  class="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition shadow-md"
+                >
+                  Agendar Minha Consulta Gratuita
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Como Funciona -->
         <div class="p-8 bg-green-50">
           <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
@@ -1058,6 +1477,218 @@
             alert("Por favor, selecione no máximo 3 objetivos.");
           }
         });
+      });
+
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Questionário
+      document.addEventListener("DOMContentLoaded", function () {
+        const questionContainer = document.getElementById("question-container");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const submitBtn = document.getElementById("submit-btn");
+        const resultsContainer = document.getElementById("results-container");
+
+        let currentQuestion = 1;
+        const totalQuestions = 5;
+
+        // Funções para navegação do questionário
+        function showQuestion(questionNumber) {
+          // Esconde todas as perguntas
+          document.querySelectorAll(".question").forEach((question) => {
+            question.classList.add("hidden");
+          });
+
+          // Mostra a pergunta atual
+          document
+            .querySelector(`.question[data-question="${questionNumber}"]`)
+            .classList.remove("hidden");
+
+          // Atualiza os botões
+          if (questionNumber > 1) {
+            prevBtn.classList.remove("hidden");
+          } else {
+            prevBtn.classList.add("hidden");
+          }
+
+          if (questionNumber === totalQuestions) {
+            nextBtn.classList.add("hidden");
+            submitBtn.classList.remove("hidden");
+          } else {
+            nextBtn.classList.remove("hidden");
+            submitBtn.classList.add("hidden");
+          }
+
+          currentQuestion = questionNumber;
+        }
+
+        // Event listeners para os botões
+        nextBtn.addEventListener("click", function () {
+          // Verifica se uma opção foi selecionada
+          const currentQuestionEl = document.querySelector(
+            `.question[data-question="${currentQuestion}"]`
+          );
+          const selectedOption = currentQuestionEl.querySelector(
+            `input[name="q${currentQuestion}"]:checked`
+          );
+
+          if (!selectedOption) {
+            alert("Por favor, selecione uma opção para continuar.");
+            return;
+          }
+
+          if (currentQuestion < totalQuestions) {
+            showQuestion(currentQuestion + 1);
+          }
+        });
+
+        prevBtn.addEventListener("click", function () {
+          if (currentQuestion > 1) {
+            showQuestion(currentQuestion - 1);
+          }
+        });
+
+        submitBtn.addEventListener("click", function () {
+          // Verifica se uma opção foi selecionada
+          const currentQuestionEl = document.querySelector(
+            `.question[data-question="${currentQuestion}"]`
+          );
+          const selectedOption = currentQuestionEl.querySelector(
+            `input[name="q${currentQuestion}"]:checked`
+          );
+
+          if (!selectedOption) {
+            alert("Por favor, selecione uma opção para continuar.");
+            return;
+          }
+
+          // Calcula o resultado
+          const answers = {
+            q1: document.querySelector('input[name="q1"]:checked').value,
+            q2: document.querySelector('input[name="q2"]:checked').value,
+            q3: document.querySelector('input[name="q3"]:checked').value,
+            q4: document.querySelector('input[name="q4"]:checked').value,
+            q5: document.querySelector('input[name="q5"]:checked').value,
+          };
+
+          const result = calculateResult(answers);
+          showResult(result);
+        });
+
+        // Cálculo do resultado
+        function calculateResult(answers) {
+          // Lógica para determinar o programa mais adequado
+          let scores = {
+            descoberta: 0,
+            jornada21: 0,
+            equilibrio: 0,
+            igbas: 0,
+          };
+
+          // Pontuação para a pergunta 1
+          if (answers.q1 === "A") scores.equilibrio += 2;
+          if (answers.q1 === "B") scores.descoberta += 2;
+          if (answers.q1 === "C") scores.igbas += 2;
+          if (answers.q1 === "D") scores.jornada21 += 2;
+          if (answers.q1 === "E") scores.descoberta += 1;
+
+          // Pontuação para a pergunta 2
+          if (answers.q2 === "A") scores.descoberta += 1;
+          if (answers.q2 === "B") scores.jornada21 += 2;
+          if (answers.q2 === "C") scores.equilibrio += 2;
+          if (answers.q2 === "D") scores.igbas += 2;
+
+          // Pontuação para a pergunta 3
+          if (answers.q3 === "A") scores.descoberta += 2;
+          if (answers.q3 === "B") scores.equilibrio += 2;
+          if (answers.q3 === "C") scores.jornada21 += 1;
+          scores.igbas += 1;
+          if (answers.q3 === "D") scores.jornada21 += 2;
+          if (answers.q3 === "E") scores.equilibrio += 2;
+
+          // Pontuação para a pergunta 4
+          if (answers.q4 === "A") scores.descoberta += 1;
+          if (answers.q4 === "B") scores.igbas += 2;
+          if (answers.q4 === "C") scores.jornada21 += 2;
+          if (answers.q4 === "D") scores.equilibrio += 2;
+
+          // Pontuação para a pergunta 5
+          if (answers.q5 === "A") scores.equilibrio += 2;
+          if (answers.q5 === "B") scores.jornada21 += 1;
+          scores.igbas += 1;
+          if (answers.q5 === "C") scores.descoberta += 2;
+          if (answers.q5 === "D") scores.igbas += 2;
+
+          // Determina o programa com maior pontuação
+          let highestScore = 0;
+          let recommendedProgram = "";
+
+          for (const program in scores) {
+            if (scores[program] > highestScore) {
+              highestScore = scores[program];
+              recommendedProgram = program;
+            }
+          }
+
+          return recommendedProgram;
+        }
+
+        // Mostrar resultado
+        function showResult(result) {
+          // Esconde o questionário
+          document.getElementById("quiz-container").classList.add("hidden");
+
+          // Mostra o container de resultados
+          resultsContainer.classList.remove("hidden");
+
+          // Esconde todos os resultados
+          document.querySelectorAll(".result-program").forEach((program) => {
+            program.classList.add("hidden");
+          });
+
+          // Mostra o resultado recomendado
+          switch (result) {
+            case "descoberta":
+              document
+                .getElementById("result-programa-descoberta")
+                .classList.remove("hidden");
+              break;
+            case "jornada21":
+              document
+                .getElementById("result-jornada-21-dias")
+                .classList.remove("hidden");
+              break;
+            case "equilibrio":
+              document
+                .getElementById("result-equilibrio-metabolico")
+                .classList.remove("hidden");
+              break;
+            case "igbas":
+              document
+                .getElementById("result-estilo-igbas")
+                .classList.remove("hidden");
+              break;
+            default:
+              document
+                .getElementById("result-programa-descoberta")
+                .classList.remove("hidden");
+          }
+
+          // Scroll para o resultado
+          resultsContainer.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+
+        // Inicializa o questionário
+        showQuestion(1);
       });
     </script>
   </body>
