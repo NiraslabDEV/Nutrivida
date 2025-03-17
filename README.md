@@ -1,14 +1,19 @@
 # Gisele Nutrivida - Site Institucional
 
-Este é o código fonte do site institucional da Gisele Nutrivida, uma nutricionista esportiva especializada em avaliação de composição corporal e planos nutricionais personalizados.
+Site oficial da Gisele Nutrivida, uma nutricionista especializada em avaliação de composição corporal, planos nutricionais personalizados e programas de saúde.
 
 ## Estrutura do Projeto
 
 ```
 gisele-nutrivida/
-├── index.html     # Arquivo HTML principal
-├── styles.css     # Estilos personalizados
-└── script.js      # JavaScript para interatividade
+├── index.html                         # Página inicial
+├── programa-descoberta.html           # Página do Programa Descoberta
+├── programa-equilibrio-metabolico.html # Página do Programa Equilíbrio Metabólico
+├── programa-estilo-igbas.html         # Página do Programa Estilo de Vida com IGBas
+├── consulta-gratuita.html             # Página da Consulta Introdutória Gratuita
+├── programa.html                      # Página genérica de programa
+├── styles.css                         # Estilos personalizados
+└── script.js                          # JavaScript para interatividade
 ```
 
 ## Tecnologias Utilizadas
